@@ -35,6 +35,8 @@ for (const vid of videos) {
   if (fs.existsSync(src)) {
     console.log(`📦 Copiando vídeo: ${vid} (${(fs.statSync(src).size / (1024 * 1024)).toFixed(1)} MB)...`);
     fs.copyFileSync(src, dest);
+  } else if (fs.existsSync(dest)) {
+    console.log(`✓ Vídeo já existente em dist/videos/: ${vid}`);
   } else {
     console.warn(`⚠️ Vídeo não encontrado em out/: ${vid}`);
   }
@@ -690,3 +692,4 @@ function generate404Html() {
 </body>
 </html>`;
 }
+
