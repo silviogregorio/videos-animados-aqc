@@ -1,0 +1,887 @@
+{
+  "s1": {
+    "text": "Viver em paz é uma arte que começa dentro de nós: viva sem fingir. Deixe cair as máscaras da aprovação dos outros. A sua maior força está em acolher a sua essência com verdade e gratidão.",
+    "seconds": 12.153,
+    "words": [
+      {
+        "text": "Viver",
+        "start": 0,
+        "end": 0.333
+      },
+      {
+        "text": "em",
+        "start": 0.345,
+        "end": 0.443
+      },
+      {
+        "text": "paz",
+        "start": 0.456,
+        "end": 0.615
+      },
+      {
+        "text": "é",
+        "start": 0.627,
+        "end": 0.762
+      },
+      {
+        "text": "uma",
+        "start": 0.774,
+        "end": 0.921
+      },
+      {
+        "text": "arte",
+        "start": 0.934,
+        "end": 1.301
+      },
+      {
+        "text": "que",
+        "start": 1.314,
+        "end": 1.399
+      },
+      {
+        "text": "começa",
+        "start": 1.412,
+        "end": 1.865
+      },
+      {
+        "text": "dentro",
+        "start": 1.877,
+        "end": 2.208
+      },
+      {
+        "text": "de",
+        "start": 2.22,
+        "end": 2.318
+      },
+      {
+        "text": "nós",
+        "start": 2.331,
+        "end": 2.735
+      },
+      {
+        "text": "viva",
+        "start": 2.956,
+        "end": 3.311
+      },
+      {
+        "text": "sem",
+        "start": 3.323,
+        "end": 3.507
+      },
+      {
+        "text": "fingir",
+        "start": 3.519,
+        "end": 3.948
+      },
+      {
+        "text": "Deixe",
+        "start": 4.793,
+        "end": 5.21
+      },
+      {
+        "text": "cair",
+        "start": 5.222,
+        "end": 5.516
+      },
+      {
+        "text": "as",
+        "start": 5.528,
+        "end": 5.675
+      },
+      {
+        "text": "máscaras",
+        "start": 5.688,
+        "end": 6.202
+      },
+      {
+        "text": "da",
+        "start": 6.215,
+        "end": 6.3
+      },
+      {
+        "text": "aprovação",
+        "start": 6.313,
+        "end": 6.852
+      },
+      {
+        "text": "dos",
+        "start": 6.864,
+        "end": 6.999
+      },
+      {
+        "text": "outros",
+        "start": 7.011,
+        "end": 7.55
+      },
+      {
+        "text": "A",
+        "start": 8.396,
+        "end": 8.494
+      },
+      {
+        "text": "sua",
+        "start": 8.506,
+        "end": 8.715
+      },
+      {
+        "text": "maior",
+        "start": 8.727,
+        "end": 9.07
+      },
+      {
+        "text": "força",
+        "start": 9.082,
+        "end": 9.364
+      },
+      {
+        "text": "está",
+        "start": 9.376,
+        "end": 9.572
+      },
+      {
+        "text": "em",
+        "start": 9.585,
+        "end": 9.67
+      },
+      {
+        "text": "acolher",
+        "start": 9.683,
+        "end": 10.038
+      },
+      {
+        "text": "a",
+        "start": 10.05,
+        "end": 10.099
+      },
+      {
+        "text": "sua",
+        "start": 10.112,
+        "end": 10.32
+      },
+      {
+        "text": "essência",
+        "start": 10.332,
+        "end": 10.798
+      },
+      {
+        "text": "com",
+        "start": 10.81,
+        "end": 10.957
+      },
+      {
+        "text": "verdade",
+        "start": 10.969,
+        "end": 11.484
+      },
+      {
+        "text": "e",
+        "start": 11.496,
+        "end": 11.509
+      },
+      {
+        "text": "gratidão",
+        "start": 11.521,
+        "end": 12.072
+      }
+    ]
+  },
+  "s2": {
+    "text": "Ame sem depender. O amor verdadeiro não é um apego que aprisiona, mas um encontro de liberdade. Amar é transbordar a própria paz e caminhar lado a lado, cuidando do coração de quem amamos.",
+    "seconds": 12.499,
+    "words": [
+      {
+        "text": "Ame",
+        "start": 0,
+        "end": 0.239
+      },
+      {
+        "text": "sem",
+        "start": 0.251,
+        "end": 0.435
+      },
+      {
+        "text": "depender",
+        "start": 0.447,
+        "end": 0.974
+      },
+      {
+        "text": "O",
+        "start": 1.819,
+        "end": 1.942
+      },
+      {
+        "text": "amor",
+        "start": 1.954,
+        "end": 2.309
+      },
+      {
+        "text": "verdadeiro",
+        "start": 2.321,
+        "end": 2.91
+      },
+      {
+        "text": "não",
+        "start": 2.922,
+        "end": 3.118
+      },
+      {
+        "text": "é",
+        "start": 3.13,
+        "end": 3.192
+      },
+      {
+        "text": "um",
+        "start": 3.204,
+        "end": 3.351
+      },
+      {
+        "text": "apego",
+        "start": 3.363,
+        "end": 3.731
+      },
+      {
+        "text": "que",
+        "start": 3.743,
+        "end": 3.829
+      },
+      {
+        "text": "aprisiona",
+        "start": 3.841,
+        "end": 4.368
+      },
+      {
+        "text": "mas",
+        "start": 4.674,
+        "end": 4.785
+      },
+      {
+        "text": "um",
+        "start": 4.797,
+        "end": 4.969
+      },
+      {
+        "text": "encontro",
+        "start": 4.981,
+        "end": 5.459
+      },
+      {
+        "text": "de",
+        "start": 5.471,
+        "end": 5.532
+      },
+      {
+        "text": "liberdade",
+        "start": 5.545,
+        "end": 6.219
+      },
+      {
+        "text": "Amar",
+        "start": 7.064,
+        "end": 7.432
+      },
+      {
+        "text": "é",
+        "start": 7.444,
+        "end": 7.493
+      },
+      {
+        "text": "transbordar",
+        "start": 7.505,
+        "end": 8.118
+      },
+      {
+        "text": "a",
+        "start": 8.13,
+        "end": 8.192
+      },
+      {
+        "text": "própria",
+        "start": 8.204,
+        "end": 8.608
+      },
+      {
+        "text": "paz",
+        "start": 8.62,
+        "end": 8.78
+      },
+      {
+        "text": "e",
+        "start": 8.792,
+        "end": 8.89
+      },
+      {
+        "text": "caminhar",
+        "start": 8.902,
+        "end": 9.356
+      },
+      {
+        "text": "lado",
+        "start": 9.368,
+        "end": 9.613
+      },
+      {
+        "text": "a",
+        "start": 9.625,
+        "end": 9.662
+      },
+      {
+        "text": "lado",
+        "start": 9.674,
+        "end": 10.03
+      },
+      {
+        "text": "cuidando",
+        "start": 10.348,
+        "end": 10.851
+      },
+      {
+        "text": "do",
+        "start": 10.863,
+        "end": 10.949
+      },
+      {
+        "text": "coração",
+        "start": 10.961,
+        "end": 11.464
+      },
+      {
+        "text": "de",
+        "start": 11.476,
+        "end": 11.598
+      },
+      {
+        "text": "quem",
+        "start": 11.611,
+        "end": 11.831
+      },
+      {
+        "text": "amamos",
+        "start": 11.844,
+        "end": 12.407
+      }
+    ]
+  },
+  "s3": {
+    "text": "Escute sem atacar. Muitas vezes, quem desabafa só precisa de um porto seguro, e não de julgamentos. O silêncio acolhedor e a escuta compassiva têm o poder de confortar a alma humana.",
+    "seconds": 12.22,
+    "words": [
+      {
+        "text": "Escute",
+        "start": 0,
+        "end": 0.46
+      },
+      {
+        "text": "sem",
+        "start": 0.472,
+        "end": 0.729
+      },
+      {
+        "text": "atacar",
+        "start": 0.742,
+        "end": 1.22
+      },
+      {
+        "text": "Muitas",
+        "start": 2.064,
+        "end": 2.505
+      },
+      {
+        "text": "vezes",
+        "start": 2.518,
+        "end": 2.946
+      },
+      {
+        "text": "quem",
+        "start": 3.192,
+        "end": 3.351
+      },
+      {
+        "text": "desabafa",
+        "start": 3.363,
+        "end": 3.964
+      },
+      {
+        "text": "só",
+        "start": 3.976,
+        "end": 4.123
+      },
+      {
+        "text": "precisa",
+        "start": 4.135,
+        "end": 4.552
+      },
+      {
+        "text": "de",
+        "start": 4.564,
+        "end": 4.625
+      },
+      {
+        "text": "um",
+        "start": 4.638,
+        "end": 4.736
+      },
+      {
+        "text": "porto",
+        "start": 4.748,
+        "end": 5.03
+      },
+      {
+        "text": "seguro",
+        "start": 5.042,
+        "end": 5.52
+      },
+      {
+        "text": "e",
+        "start": 5.826,
+        "end": 5.924
+      },
+      {
+        "text": "não",
+        "start": 5.937,
+        "end": 6.182
+      },
+      {
+        "text": "de",
+        "start": 6.194,
+        "end": 6.268
+      },
+      {
+        "text": "julgamentos",
+        "start": 6.28,
+        "end": 7.04
+      },
+      {
+        "text": "O",
+        "start": 7.885,
+        "end": 7.995
+      },
+      {
+        "text": "silêncio",
+        "start": 8.008,
+        "end": 8.51
+      },
+      {
+        "text": "acolhedor",
+        "start": 8.522,
+        "end": 9.049
+      },
+      {
+        "text": "e",
+        "start": 9.062,
+        "end": 9.098
+      },
+      {
+        "text": "a",
+        "start": 9.111,
+        "end": 9.147
+      },
+      {
+        "text": "escuta",
+        "start": 9.16,
+        "end": 9.515
+      },
+      {
+        "text": "compassiva",
+        "start": 9.527,
+        "end": 10.152
+      },
+      {
+        "text": "têm",
+        "start": 10.165,
+        "end": 10.312
+      },
+      {
+        "text": "o",
+        "start": 10.324,
+        "end": 10.373
+      },
+      {
+        "text": "poder",
+        "start": 10.385,
+        "end": 10.716
+      },
+      {
+        "text": "de",
+        "start": 10.728,
+        "end": 10.802
+      },
+      {
+        "text": "confortar",
+        "start": 10.814,
+        "end": 11.366
+      },
+      {
+        "text": "a",
+        "start": 11.378,
+        "end": 11.439
+      },
+      {
+        "text": "alma",
+        "start": 11.451,
+        "end": 11.721
+      },
+      {
+        "text": "humana",
+        "start": 11.733,
+        "end": 12.138
+      }
+    ]
+  },
+  "s4": {
+    "text": "Fale sem ofender. Suas palavras carregam a força de construir ou ferir. Escolha ser uma voz que semeia esperança, encoraja corações e ilumina a caminhada de quem cruza a sua vida.",
+    "seconds": 11.611,
+    "words": [
+      {
+        "text": "Fale",
+        "start": 0,
+        "end": 0.301
+      },
+      {
+        "text": "sem",
+        "start": 0.313,
+        "end": 0.534
+      },
+      {
+        "text": "ofender",
+        "start": 0.546,
+        "end": 1.012
+      },
+      {
+        "text": "Suas",
+        "start": 1.856,
+        "end": 2.175
+      },
+      {
+        "text": "palavras",
+        "start": 2.187,
+        "end": 2.677
+      },
+      {
+        "text": "carregam",
+        "start": 2.69,
+        "end": 3.18
+      },
+      {
+        "text": "a",
+        "start": 3.192,
+        "end": 3.253
+      },
+      {
+        "text": "força",
+        "start": 3.266,
+        "end": 3.646
+      },
+      {
+        "text": "de",
+        "start": 3.658,
+        "end": 3.744
+      },
+      {
+        "text": "construir",
+        "start": 3.756,
+        "end": 4.283
+      },
+      {
+        "text": "ou",
+        "start": 4.295,
+        "end": 4.381
+      },
+      {
+        "text": "ferir",
+        "start": 4.393,
+        "end": 4.761
+      },
+      {
+        "text": "Escolha",
+        "start": 5.606,
+        "end": 6.109
+      },
+      {
+        "text": "ser",
+        "start": 6.121,
+        "end": 6.305
+      },
+      {
+        "text": "uma",
+        "start": 6.317,
+        "end": 6.464
+      },
+      {
+        "text": "voz",
+        "start": 6.476,
+        "end": 6.746
+      },
+      {
+        "text": "que",
+        "start": 6.758,
+        "end": 6.856
+      },
+      {
+        "text": "semeia",
+        "start": 6.869,
+        "end": 7.187
+      },
+      {
+        "text": "esperança",
+        "start": 7.199,
+        "end": 7.788
+      },
+      {
+        "text": "encoraja",
+        "start": 8.033,
+        "end": 8.523
+      },
+      {
+        "text": "corações",
+        "start": 8.535,
+        "end": 9.062
+      },
+      {
+        "text": "e",
+        "start": 9.074,
+        "end": 9.185
+      },
+      {
+        "text": "ilumina",
+        "start": 9.197,
+        "end": 9.577
+      },
+      {
+        "text": "a",
+        "start": 9.589,
+        "end": 9.626
+      },
+      {
+        "text": "caminhada",
+        "start": 9.638,
+        "end": 10.153
+      },
+      {
+        "text": "de",
+        "start": 10.165,
+        "end": 10.263
+      },
+      {
+        "text": "quem",
+        "start": 10.275,
+        "end": 10.508
+      },
+      {
+        "text": "cruza",
+        "start": 10.521,
+        "end": 10.851
+      },
+      {
+        "text": "a",
+        "start": 10.864,
+        "end": 10.888
+      },
+      {
+        "text": "sua",
+        "start": 10.9,
+        "end": 11.158
+      },
+      {
+        "text": "vida",
+        "start": 11.17,
+        "end": 11.513
+      }
+    ]
+  },
+  "s5": {
+    "text": "Viver bem é colocar o amor em ação todos os dias. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha. Faça parte dessa missão.",
+    "seconds": 16.302,
+    "words": [
+      {
+        "text": "Viver",
+        "start": 0,
+        "end": 0.374
+      },
+      {
+        "text": "bem",
+        "start": 0.386,
+        "end": 0.643
+      },
+      {
+        "text": "é",
+        "start": 0.656,
+        "end": 0.705
+      },
+      {
+        "text": "colocar",
+        "start": 0.717,
+        "end": 1.146
+      },
+      {
+        "text": "o",
+        "start": 1.158,
+        "end": 1.219
+      },
+      {
+        "text": "amor",
+        "start": 1.232,
+        "end": 1.526
+      },
+      {
+        "text": "em",
+        "start": 1.538,
+        "end": 1.624
+      },
+      {
+        "text": "ação",
+        "start": 1.636,
+        "end": 2.016
+      },
+      {
+        "text": "todos",
+        "start": 2.028,
+        "end": 2.359
+      },
+      {
+        "text": "os",
+        "start": 2.371,
+        "end": 2.543
+      },
+      {
+        "text": "dias",
+        "start": 2.555,
+        "end": 3.021
+      },
+      {
+        "text": "Projeto",
+        "start": 3.865,
+        "end": 4.417
+      },
+      {
+        "text": "Social",
+        "start": 4.429,
+        "end": 4.895
+      },
+      {
+        "text": "Amor",
+        "start": 4.907,
+        "end": 5.287
+      },
+      {
+        "text": "Que",
+        "start": 5.299,
+        "end": 5.409
+      },
+      {
+        "text": "Compartilha",
+        "start": 5.422,
+        "end": 6.132
+      },
+      {
+        "text": "Acesse",
+        "start": 6.978,
+        "end": 7.53
+      },
+      {
+        "text": "www",
+        "start": 7.542,
+        "end": 8.375
+      },
+      {
+        "text": "ponto",
+        "start": 8.387,
+        "end": 8.657
+      },
+      {
+        "text": "amorquecompartilha",
+        "start": 8.669,
+        "end": 9.576
+      },
+      {
+        "text": "ponto",
+        "start": 9.588,
+        "end": 9.919
+      },
+      {
+        "text": "com",
+        "start": 9.932,
+        "end": 10.115
+      },
+      {
+        "text": "ponto",
+        "start": 10.128,
+        "end": 10.397
+      },
+      {
+        "text": "br",
+        "start": 10.409,
+        "end": 10.851
+      },
+      {
+        "text": "e",
+        "start": 10.863,
+        "end": 10.912
+      },
+      {
+        "text": "siga",
+        "start": 10.924,
+        "end": 11.231
+      },
+      {
+        "text": "no",
+        "start": 11.243,
+        "end": 11.316
+      },
+      {
+        "text": "Instagram",
+        "start": 11.329,
+        "end": 11.721
+      },
+      {
+        "text": "arroba",
+        "start": 11.733,
+        "end": 12.064
+      },
+      {
+        "text": "amor",
+        "start": 12.076,
+        "end": 12.346
+      },
+      {
+        "text": "ponto",
+        "start": 12.358,
+        "end": 12.713
+      },
+      {
+        "text": "que",
+        "start": 12.726,
+        "end": 12.848
+      },
+      {
+        "text": "ponto",
+        "start": 12.86,
+        "end": 13.179
+      },
+      {
+        "text": "compartilha",
+        "start": 13.191,
+        "end": 13.878
+      },
+      {
+        "text": "Faça",
+        "start": 14.723,
+        "end": 15.14
+      },
+      {
+        "text": "parte",
+        "start": 15.152,
+        "end": 15.52
+      },
+      {
+        "text": "dessa",
+        "start": 15.532,
+        "end": 15.777
+      },
+      {
+        "text": "missão",
+        "start": 15.789,
+        "end": 16.231
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "videos-animados-aqc",
+  "version": "1.0.0",
+  "description": "Vídeos Animados 3D e Plataforma de Conscientização — Amor Que Compartilha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silviogregorio/videos-animados-aqc.git"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "@remotion/media": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/three": "^0.186.0",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "zod": "^4.6.7"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build:remotion": "remotion bundle",
+    "build": "node scripts/build-web.mjs",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

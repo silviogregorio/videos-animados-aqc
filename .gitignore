@@ -1,0 +1,44 @@
+# Dependências
+node_modules/
+projeto-amor-que-compartilha/node_modules/
+
+# Builds e outputs
+build/
+dist/
+projeto-amor-que-compartilha/build/
+projeto-amor-que-compartilha/dist/videos/*.mp4
+projeto-amor-que-compartilha/out/*.mp4
+*.mp4
+*.wav
+*.aac
+*.mp3
+
+# Arquivos sensíveis
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.dump
+*.bak
+*.sql
+credentials.json
+client_secret*.json
+
+# Vercel
+.vercel/
+projeto-amor-que-compartilha/.vercel/
+
+# Logs e temporários
+*.log
+.tmp/
+tmp/
+__pycache__/
+*.pyc
+
+# IDE e SO
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

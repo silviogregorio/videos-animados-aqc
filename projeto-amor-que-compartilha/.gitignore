@@ -1,0 +1,44 @@
+# Dependências
+node_modules/
+
+# Builds e outputs pesados
+build/
+.cache/
+dist/videos/*.mp4
+out/*.mp4
+*.mp4
+*.wav
+*.aac
+*.mp3
+
+# Arquivos sensíveis e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.dump
+*.bak
+*.sql
+credentials.json
+client_secret*.json
+
+# Vercel
+.vercel/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.tmp/
+tmp/
+__pycache__/
+*.pyc
+
+# IDE e SO
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

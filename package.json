@@ -1,0 +1,11 @@
+{
+  "name": "videos-animados",
+  "version": "1.20.310",
+  "description": "Plataforma e Catálogo de Vídeos Animados 3D — Amor Que Compartilha",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix projeto-amor-que-compartilha run build",
+    "dev": "npm --prefix projeto-amor-que-compartilha run dev",
+    "lint": "npm --prefix projeto-amor-que-compartilha run lint"
+  }
+}
