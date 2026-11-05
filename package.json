@@ -9,3 +9,4 @@
     "lint": "npm --prefix projeto-amor-que-compartilha run lint"
   }
 }
+

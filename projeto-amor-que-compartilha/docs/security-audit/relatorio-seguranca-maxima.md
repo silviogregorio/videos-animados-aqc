@@ -103,3 +103,4 @@ Esta auditoria de segurança foi conduzida seguindo rigorosamente a **Skill Segu
    - Garantido pelo isolamento estático do build e ausência de banco de dados gravável no cliente.
 
 ---
+
