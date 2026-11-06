@@ -122,7 +122,7 @@ const BrandOverlay: React.FC = () => {
           textShadow: "0 2px 6px rgba(0, 0, 0, 0.9)",
         }}
       >
-        VIVA SEM FINGIR • AME SEM DEPENDER • ESCUTE SEM ATACAR • FALE SEM OFENDER
+        AMAR SEM JULGAR • O PODER DO ABRAÇO • ERGUER AO INVÉS DE DERRUBAR • ENSINAR COM AMOR
       </div>
     </AbsoluteFill>
   );

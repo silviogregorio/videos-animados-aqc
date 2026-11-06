@@ -98,13 +98,13 @@ const P = {
 };
 
 export const scenes: ScenePlan[] = [
-  // CENA 1: VIVA SEM FINGIR (Sol / Manhã Dourada / Autenticidade)
+  // CENA 1: AMAR SEM JULGAR (Acolhimento / Compreensão / Não Apontar o Dedo)
   {
-    id: "scene-01-viva-sem-fingir",
+    id: "scene-01-amar-sem-julgar",
     startFrame: sc(0).from,
     durationInFrames: sc(0).durationInFrames,
     voKey: "s1",
-    narration: "Viver em paz é uma arte que começa dentro de nós: viva sem fingir. Deixe cair as máscaras da aprovação dos outros. A sua maior força está em acolher a sua essência com verdade e gratidão.",
+    narration: "É muito fácil apontar o dedo e julgar quem tropeça pelo caminho. Mas quem julga nunca sabe a dor silenciosa que o outro carrega no peito. A verdadeira sabedoria da vida começa quando trocamos a crítica pela compreensão.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -121,21 +121,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "light.warmth", startFrame: 0, endFrame: 60, from: 0.6, to: 1.0, easing: "out", unit: "0-1" },
     ],
     badges: [
-      { text: "1. VIVA SEM FINGIR", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(0) - 10) },
-      { text: "AUTENTICIDADE & GRATIDÃO", variant: "positive", appearAt: 170, disappearAt: end(0) - 5 },
+      { text: "1. AMAR SEM JULGAR", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(0) - 10) },
+      { text: "COMPREENSÃO & EMPATIA", variant: "positive", appearAt: 170, disappearAt: end(0) - 5 },
     ],
-    highlights: ["VIVER", "PAZ", "ARTE", "VIVA", "FINGIR", "MÁSCARAS", "FORÇA", "ESSÊNCIA", "GRATIDÃO"],
-    captions: [{ text: "Viver em paz é uma arte que começa dentro de nós: viva sem fingir.", from: voLocal("s1"), to: end(0) }],
+    highlights: ["JULGAR", "TROPEÇA", "DOR", "SILENCIOSA", "SABEDORIA", "CRÍTICA", "COMPREENSÃO"],
+    captions: [{ text: "Quem julga nunca sabe a dor silenciosa que o outro carrega.", from: voLocal("s1"), to: end(0) }],
     audioCues: [narration("s1"), sfx("whoosh-soft", 0, 0.25), sfx("glow", 25, 0.35)],
   },
 
-  // CENA 2: AME SEM DEPENDER (Crepúsculo / Outono / Liberdade)
+  // CENA 2: O PODER DO ABRAÇO (Acolhimento / Conforto / Sem Perguntas)
   {
-    id: "scene-02-ame-sem-depender",
+    id: "scene-02-o-poder-do-abraco",
     startFrame: sc(1).from,
     durationInFrames: sc(1).durationInFrames,
     voKey: "s2",
-    narration: "Ame sem depender. O amor verdadeiro não é um apego que aprisiona, mas um encontro de liberdade. Amar é transbordar a própria paz e caminhar lado a lado, cuidando do coração de quem amamos.",
+    narration: "Muitas vezes, quem está sofrendo não precisa de sermões ou cobranças. Só precisa de um abraço sincero que acolha a alma sem fazer perguntas. Um gesto de carinho tem a força de restaurar pedaços que palavras duras quebraram.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -151,21 +151,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "leaves.drift", startFrame: 0, endFrame: end(1), from: 0, to: 3.5, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "2. AME SEM DEPENDER", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(1) - 10) },
-      { text: "AMOR QUE LIBERTA", variant: "positive", appearAt: 170, disappearAt: end(1) - 5 },
+      { text: "2. O PODER DO ABRAÇO", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(1) - 10) },
+      { text: "ACOLHER SEM JULGAR", variant: "positive", appearAt: 170, disappearAt: end(1) - 5 },
     ],
-    highlights: ["AME", "DEPENDER", "VERDADEIRO", "LIBERDADE", "AMAR", "PAZ", "CORAÇÃO"],
-    captions: [{ text: "Ame sem depender. O amor verdadeiro floresce na liberdade.", from: voLocal("s2"), to: end(1) }],
+    highlights: ["SOFRENDO", "ABRAÇO", "SINCERO", "ACOLHA", "ALMA", "CARINHO", "RESTAURAR"],
+    captions: [{ text: "Muitas vezes, quem sofre só precisa de um abraço sincero.", from: voLocal("s2"), to: end(1) }],
     audioCues: [narration("s2"), sfx("whoosh-soft", 0, 0.25), sfx("ding", 20, 0.32)],
   },
 
-  // CENA 3: ESCUTE SEM ATACAR (Noite Serena / Estrelas / Empatia)
+  // CENA 3: ERGUER QUEM CAIU (Palavras de Consolo / Dignidade / Não Derrubar)
   {
-    id: "scene-03-escute-sem-atacar",
+    id: "scene-03-erguer-quem-caiu",
     startFrame: sc(2).from,
     durationInFrames: sc(2).durationInFrames,
     voKey: "s3",
-    narration: "Escute sem atacar. Muitas vezes, quem desabafa só precisa de um porto seguro, e não de julgamentos. O silêncio acolhedor e a escuta compassiva têm o poder de confortar a alma humana.",
+    narration: "Suas palavras têm o poder de derrubar ou de erguer uma vida. Seja a voz que acalma a tempestade, que devolve a dignidade e lembra ao caído o valor precioso que ele tem diante da vida.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -181,21 +181,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "stars.twinkle", startFrame: 0, endFrame: end(2), from: 0, to: 2.5, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "3. ESCUTE SEM ATACAR", variant: "info", appearAt: 20, disappearAt: Math.min(160, end(2) - 10) },
-      { text: "ESCUTA COMPASSIVA", variant: "positive", appearAt: 170, disappearAt: end(2) - 5 },
+      { text: "3. ERGUER QUEM CAIU", variant: "info", appearAt: 20, disappearAt: Math.min(160, end(2) - 10) },
+      { text: "PALAVRAS DE CONSOLO", variant: "positive", appearAt: 170, disappearAt: end(2) - 5 },
     ],
-    highlights: ["ESCUTE", "ATACAR", "PORTO", "SEGURO", "JULGAMENTOS", "SILÊNCIO", "COMPASSIVA", "ALMA"],
-    captions: [{ text: "Escute sem atacar. Quem desabafa só precisa de um porto seguro.", from: voLocal("s3"), to: end(2) }],
+    highlights: ["PALAVRAS", "DERRUBAR", "ERGUER", "TEMPESTADE", "DIGNIDADE", "VALOR", "PRECIOSO"],
+    captions: [{ text: "Suas palavras têm o poder de derrubar ou de erguer uma vida.", from: voLocal("s3"), to: end(2) }],
     audioCues: [narration("s3"), sfx("whoosh-soft", 0, 0.25), sfx("shimmer", 20, 0.35)],
   },
 
-  // CENA 4: FALE SEM OFENDER (Primavera / Verde Esmeralda / Palavras que Edificam)
+  // CENA 4: ENSINAR COM PACIÊNCIA (Caminhar Junto / Ensinamentos / Crescer Junto)
   {
-    id: "scene-04-fale-sem-ofender",
+    id: "scene-04-ensinar-com-paciencia",
     startFrame: sc(3).from,
     durationInFrames: sc(3).durationInFrames,
     voKey: "s4",
-    narration: "Fale sem ofender. Suas palavras carregam a força de construir ou ferir. Escolha ser uma voz que semeia esperança, encoraja corações e ilumina a caminhada de quem cruza a sua vida.",
+    narration: "Amar não é fechar os olhos para os erros, mas nunca é humilhar quem errou. Ensine com paciência, respeite o tempo de cada um e estenda a mão para caminhar junto. Quem ajuda a levantar o próximo, cresce junto com ele.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -211,11 +211,11 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "petals.drift", startFrame: 0, endFrame: end(3), from: 0, to: 3.0, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "4. FALE SEM OFENDER", variant: "positive", appearAt: 20, disappearAt: Math.min(160, end(3) - 10) },
-      { text: "PALAVRAS QUE EDIFICAM", variant: "positive", appearAt: 170, disappearAt: end(3) - 5 },
+      { text: "4. ENSINAR COM PACIÊNCIA", variant: "positive", appearAt: 20, disappearAt: Math.min(160, end(3) - 10) },
+      { text: "CAMINHAR JUNTO", variant: "positive", appearAt: 170, disappearAt: end(3) - 5 },
     ],
-    highlights: ["FALE", "OFENDER", "PALAVRAS", "CONSTRUIR", "ESPERANÇA", "ENCORAJA", "ILUMINA"],
-    captions: [{ text: "Fale sem ofender. Suas palavras carregam a força de construir e curar.", from: voLocal("s4"), to: end(3) }],
+    highlights: ["AMAR", "PACIÊNCIA", "ESTENDA", "MÃO", "CAMINHAR", "AJUDA", "LEVANTA", "CRESCE"],
+    captions: [{ text: "Quem ajuda a levantar o próximo, cresce junto com ele.", from: voLocal("s4"), to: end(3) }],
     audioCues: [narration("s4"), sfx("whoosh-soft", 0, 0.25), sfx("glow", 20, 0.32)],
   },
 
@@ -225,7 +225,7 @@ export const scenes: ScenePlan[] = [
     startFrame: sc(4).from,
     durationInFrames: sc(4).durationInFrames,
     voKey: "s5",
-    narration: "Viver bem é colocar o amor em ação todos os dias. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha. Faça parte dessa missão.",
+    narration: "Viver com propósito é colocar o amor em ação todos os dias. Não derrube quem já caiu: seja o apoio que transforma. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha.",
     camera: {
       projection: "perspective",
       movement: "dolly-out",
@@ -243,11 +243,11 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "fade", startFrame: end(4) - 25, endFrame: end(4), from: 0, to: 1, easing: "in", unit: "0-1" },
     ],
     badges: [
-      { text: "LIÇÃO DA VIDA", variant: "warning", size: "large", appearAt: 15, disappearAt: 130 },
+      { text: "AMAR E NÃO JULGAR", variant: "warning", size: "large", appearAt: 15, disappearAt: 130 },
       { text: "AMOR EM AÇÃO", variant: "positive", size: "large", appearAt: 135, disappearAt: end(4) - 5 },
     ],
-    highlights: ["VIVER", "BEM", "AMOR", "AÇÃO", "PROJETO", "SOCIAL", "COMPARTILHA", "MISSÃO"],
-    captions: [{ text: "Viver bem é colocar o amor em ação todos os dias. Conheça e apoie:", from: voLocal("s5"), to: end(4) }],
+    highlights: ["VIVER", "PROPÓSITO", "AMOR", "AÇÃO", "PROJETO", "SOCIAL", "COMPARTILHA", "TRANSFORMA"],
+    captions: [{ text: "Não derrube quem já caiu: seja o apoio que transforma vidas.", from: voLocal("s5"), to: end(4) }],
     audioCues: [narration("s5"), sfx("final", 15, 0.38), sfx("whoosh", end(4) - 25, 0.25)],
   },
 ];

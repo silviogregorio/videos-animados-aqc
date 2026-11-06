@@ -7,11 +7,7 @@ export const Background: React.FC = () => {
   const currentScene = sceneAt(frame);
 
   const sceneIdx = useMemo(() => {
-    if (currentScene.id.includes("viva")) return 1;
-    if (currentScene.id.includes("ame")) return 2;
-    if (currentScene.id.includes("escute")) return 3;
-    if (currentScene.id.includes("fale")) return 4;
-    return 5;
+    return Number(currentScene.voKey.replace("s", "")) || 1;
   }, [currentScene]);
 
   const localFrame = frame - currentScene.startFrame;

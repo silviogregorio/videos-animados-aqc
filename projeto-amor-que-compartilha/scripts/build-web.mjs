@@ -25,6 +25,7 @@ fs.mkdirSync(distPublic, { recursive: true });
 // 2. Copiar vídeos de out/ para dist/videos/
 const outDir = path.join(projectRoot, 'out');
 const videos = [
+  'amarenaojulgar.mp4',
   'amor-que-compartilha.mp4',
   'licao-de-vida.mp4'
 ];
@@ -109,13 +110,14 @@ for (let i = 0; i < sceneKeys.length; i++) {
   }
 }
 fs.writeFileSync(path.join(distDir, 'subtitles-licao.vtt'), vttLicao, 'utf8');
+fs.writeFileSync(path.join(distDir, 'subtitles-amarenaojulgar.vtt'), vttLicao, 'utf8');
 
 // 6. Gerar version.json
 const versionInfo = {
-  version: '1.20.310',
+  version: '1.20.311',
   build: new Date().toISOString(),
   name: 'videos-animados-aqc',
-  title: 'Amor Que Compartilha — Vídeos Animados 3D',
+  title: 'Amor Que Compartilha — Vídeos Animados 3D (Amar e Não Julgar)',
   security: {
     status: 'HARDENED',
     skill: 'skillsegurancamaxima',
@@ -453,8 +455,11 @@ function generateIndexHtml(v) {
   <main class="container">
 
     <div class="hero-tabs">
-      <button class="tab-btn active" id="tab-licao" onclick="switchVideo('licao')">
-        🎬 Lição de Vida (Viver em Paz)
+      <button class="tab-btn active" id="tab-amarenaojulgar" onclick="switchVideo('amarenaojulgar')">
+        ❤️ Amar e Não Julgar (Lição de Vida 3D)
+      </button>
+      <button class="tab-btn" id="tab-licao" onclick="switchVideo('licao')">
+        🎬 Viver em Paz (Lição de Vida)
       </button>
       <button class="tab-btn" id="tab-neuro" onclick="switchVideo('neuro')">
         🧠 Conscientização: TDAH, TOD e TEA
@@ -467,8 +472,8 @@ function generateIndexHtml(v) {
       <section class="video-card" aria-label="Reprodutor de Vídeo">
         <div class="video-wrapper">
           <video id="mainVideo" controls preload="metadata" playsinline poster="./gallery/contact_sheet_final.png">
-            <source id="videoSource" src="./videos/licao-de-vida.mp4" type="video/mp4">
-            <track id="videoTrack" kind="subtitles" src="./subtitles-licao.vtt" srclang="pt-BR" label="Português" default>
+            <source id="videoSource" src="./videos/amarenaojulgar.mp4" type="video/mp4">
+            <track id="videoTrack" kind="subtitles" src="./subtitles-amarenaojulgar.vtt" srclang="pt-BR" label="Português" default>
             Seu navegador não suporta reprodução direta de vídeo HTML5.
           </video>
         </div>
@@ -476,7 +481,7 @@ function generateIndexHtml(v) {
           <div class="video-meta" id="videoResolution">
             📐 1080×1920 (9:16) • 30 fps • H.264
           </div>
-          <a id="btnDownload" href="./videos/licao-de-vida.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
+          <a id="btnDownload" href="./videos/amarenaojulgar.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
             📥 Baixar MP4
           </a>
         </div>
@@ -544,6 +549,14 @@ function generateIndexHtml(v) {
   </footer>
 
   <script>
+    const scenesAmarenaojulgar = [
+      { time: 0.00, title: "1. Amar Sem Julgar", desc: "Acolhimento e empatia. A verdadeira sabedoria começa quando trocamos a crítica pela compreensão." },
+      { time: 13.34, title: "2. O Poder do Abraço", desc: "Acolher sem julgar. Um abraço sincero que acolha a alma sem fazer perguntas. Gestos que restauram." },
+      { time: 27.46, title: "3. Erguer ao Invés de Derrubar", desc: "Palavras de consolo e dignidade. Seja a voz que acalma a tempestade e lembra ao caído seu valor." },
+      { time: 37.82, title: "4. Ensinar com Paciência", desc: "Caminhar junto e encorajar. Amar não é humilhar. Quem ajuda a levantar o próximo, cresce junto com ele." },
+      { time: 51.42, title: "5. Amor em Ação", desc: "Não derrube quem já caiu: seja o apoio que transforma. Projeto Social Amor Que Compartilha." }
+    ];
+
     const scenesLicao = [
       { time: 0.00, title: "1. Viva Sem Fingir", desc: "Deixe cair as máscaras da aprovação. Acolha sua essência com verdade e gratidão." },
       { time: 12.85, title: "2. Ame Sem Depender", desc: "Amor verdadeiro é encontro de liberdade. Transborde paz e cuide do coração de quem ama." },
@@ -563,7 +576,7 @@ function generateIndexHtml(v) {
       { time: 79.00, title: "8. Amar e Compreender", desc: "Pessoas neurodivergentes não precisam ser consertadas, precisam de amor." }
     ];
 
-    let currentMode = 'licao';
+    let currentMode = 'amarenaojulgar';
     const video = document.getElementById('mainVideo');
     const videoSource = document.getElementById('videoSource');
     const videoTrack = document.getElementById('videoTrack');
@@ -599,10 +612,16 @@ function generateIndexHtml(v) {
 
     function switchVideo(mode) {
       currentMode = mode;
+      document.getElementById('tab-amarenaojulgar').classList.toggle('active', mode === 'amarenaojulgar');
       document.getElementById('tab-licao').classList.toggle('active', mode === 'licao');
       document.getElementById('tab-neuro').classList.toggle('active', mode === 'neuro');
 
-      if (mode === 'licao') {
+      if (mode === 'amarenaojulgar') {
+        videoSource.src = './videos/amarenaojulgar.mp4';
+        videoTrack.src = './subtitles-amarenaojulgar.vtt';
+        btnDownload.href = './videos/amarenaojulgar.mp4';
+        renderScenes(scenesAmarenaojulgar);
+      } else if (mode === 'licao') {
         videoSource.src = './videos/licao-de-vida.mp4';
         videoTrack.src = './subtitles-licao.vtt';
         btnDownload.href = './videos/licao-de-vida.mp4';
@@ -619,7 +638,10 @@ function generateIndexHtml(v) {
 
     // Sincronizar cena ativa durante o playback
     video.addEventListener('timeupdate', () => {
-      const list = currentMode === 'licao' ? scenesLicao : scenesNeuro;
+      let list = scenesAmarenaojulgar;
+      if (currentMode === 'licao') list = scenesLicao;
+      if (currentMode === 'neuro') list = scenesNeuro;
+
       const t = video.currentTime;
       let activeIdx = 0;
       for (let i = 0; i < list.length; i++) {
@@ -631,8 +653,8 @@ function generateIndexHtml(v) {
       });
     });
 
-    // Inicializar lista
-    renderScenes(scenesLicao);
+    // Inicializar lista padrão
+    renderScenes(scenesAmarenaojulgar);
 
     // Auto-atualizador sem travar
     setInterval(() => {

@@ -89,11 +89,7 @@ export const World: React.FC = () => {
   const heartGeom = useHeartGeometry();
 
   const sceneIdx = useMemo(() => {
-    if (currentScene.id.includes("viva")) return 0;
-    if (currentScene.id.includes("ame")) return 1;
-    if (currentScene.id.includes("escute")) return 2;
-    if (currentScene.id.includes("fale")) return 3;
-    return 4;
+    return (Number(currentScene.voKey.replace("s", "")) || 1) - 1;
   }, [currentScene]);
 
   // Efeito de pulso para o coração na cena 5
