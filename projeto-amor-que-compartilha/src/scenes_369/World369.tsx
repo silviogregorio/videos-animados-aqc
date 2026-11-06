@@ -2,12 +2,12 @@ import React, { useMemo } from "react";
 import { random, useCurrentFrame } from "remotion";
 import { sceneAt369 } from "./data_369";
 
-// Partículas 3D flutuantes com estética corporativa dourada & tecnológica
+// Partículas 3D flutuantes com estética corporativa dourada & tecnológica ultraleve
 const TechParticles3D: React.FC = () => {
   const frame = useCurrentFrame();
 
   const particleData = useMemo(() => {
-    const count = 75;
+    const count = 65;
     const pts = [];
     for (let i = 0; i < count; i++) {
       pts.push({
@@ -17,7 +17,7 @@ const TechParticles3D: React.FC = () => {
         speed: 0.02 + random(`p369-speed-${i}`) * 0.03,
         sway: 0.4 + random(`p369-sway-${i}`) * 1.2,
         freq: 0.03 + random(`p369-freq-${i}`) * 0.04,
-        size: 0.06 + random(`p369-size-${i}`) * 0.12,
+        size: 0.07 + random(`p369-size-${i}`) * 0.12,
         isGold: i % 3 !== 0,
       });
     }
@@ -34,14 +34,8 @@ const TechParticles3D: React.FC = () => {
 
         return (
           <mesh key={i} position={[curX, curY, p.z]} scale={p.size * pulseScale}>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial
-              color={color}
-              metalness={0.8}
-              roughness={0.2}
-              emissive={p.isGold ? "#b38728" : "#0284c7"}
-              emissiveIntensity={0.3}
-            />
+            <sphereGeometry args={[1, 8, 8]} />
+            <meshBasicMaterial color={color} transparent opacity={p.isGold ? 0.75 : 0.6} />
           </mesh>
         );
       })}
@@ -70,7 +64,7 @@ const Logo369Emblem3D: React.FC = () => {
   return (
     <group position={[0, 0.4, 2.2]} scale={0.9 * pulse} rotation={[0.08, rotY, 0]}>
       {/* Moldura Externa Ouro Escovado */}
-      <mesh castShadow receiveShadow>
+      <mesh>
         <boxGeometry args={[2.4, 2.4, 0.35]} />
         <meshStandardMaterial
           color="#fcf6ba"
@@ -82,7 +76,7 @@ const Logo369Emblem3D: React.FC = () => {
       </mesh>
 
       {/* Núcleo Central em Relevo Dourado */}
-      <mesh position={[0, 0, 0.25]} castShadow>
+      <mesh position={[0, 0, 0.25]}>
         <boxGeometry args={[1.3, 1.3, 0.35]} />
         <meshStandardMaterial
           color="#f7df8b"
@@ -95,7 +89,7 @@ const Logo369Emblem3D: React.FC = () => {
 
       {/* Matriz de Cubos Digitais Flutuantes da Marca 369APP */}
       {miniCubes.map((cb, idx) => (
-        <mesh key={idx} position={cb.pos} castShadow>
+        <mesh key={idx} position={cb.pos}>
           <boxGeometry args={[cb.size, cb.size, cb.size]} />
           <meshStandardMaterial
             color="#fcf6ba"
@@ -110,19 +104,19 @@ const Logo369Emblem3D: React.FC = () => {
       {/* Anéis de Dados Tecnológicos em Órbita */}
       <group rotation={[Math.PI / 3, frame * 0.02, 0]}>
         <mesh>
-          <torusGeometry args={[2.5, 0.025, 16, 64]} />
+          <torusGeometry args={[2.5, 0.025, 12, 48]} />
           <meshBasicMaterial color="#fcf6ba" transparent opacity={0.6} />
         </mesh>
       </group>
       <group rotation={[-Math.PI / 4, -frame * 0.025, 0]}>
         <mesh>
-          <torusGeometry args={[2.8, 0.02, 16, 64]} />
+          <torusGeometry args={[2.8, 0.02, 12, 48]} />
           <meshBasicMaterial color="#38bdf8" transparent opacity={0.5} />
         </mesh>
       </group>
 
       {/* Luz Dourada Central emanando do símbolo */}
-      <pointLight color="#f7df8b" intensity={3.8} distance={15} decay={2} />
+      <pointLight color="#f7df8b" intensity={2.8} distance={12} />
     </group>
   );
 };
@@ -134,17 +128,16 @@ export const World369: React.FC = () => {
 
   return (
     <group>
-      {/* 1. Partículas Tecnológicas 3D Contínuas */}
+      {/* 1. Partículas Tecnológicas 3D Contínuas Ultraleves */}
       <TechParticles3D />
 
       {/* 2. Emblema Metálico 3D Exclusivo na Cena 5 de Encerramento */}
       {sceneIdx === 4 && <Logo369Emblem3D />}
 
-      {/* 3. Iluminação Global Corporativa de Alta Definição */}
-      <ambientLight intensity={1.3} />
-      <directionalLight position={[5, 9, 8]} color="#fcf6ba" intensity={2.4} />
-      <directionalLight position={[-6, 6, 6]} color="#93c5fd" intensity={1.5} />
-      <pointLight position={[0, -5, 5]} color="#b38728" intensity={1.8} />
+      {/* 3. Iluminação Global Corporativa sem mapas pesados de sombras */}
+      <ambientLight intensity={1.5} />
+      <directionalLight position={[5, 8, 8]} color="#fcf6ba" intensity={2.2} />
+      <directionalLight position={[-6, 5, 6]} color="#93c5fd" intensity={1.4} />
     </group>
   );
 };

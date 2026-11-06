@@ -29,3 +29,4 @@ for s in scripts:
             if t_clean not in seen and len(t_clean) < 200:
                 seen.add(t_clean)
                 print('•', t_clean)
+

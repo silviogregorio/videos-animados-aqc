@@ -24,7 +24,7 @@ const musicVolume = (frame: number) => {
 
 export const Soundtrack: React.FC = () => (
   <>
-    {HAS_MUSIC ? <Audio name="Trilha instrumental suave" src={staticFile("audio/music.wav")} volume={musicVolume} /> : null}
+    {HAS_MUSIC ? <Audio name="Trilha instrumental suave" src={staticFile("audio/music.mp3")} volume={musicVolume} /> : null}
     {scenes.map((sc) => (
       <Sequence key={sc.id} name={`Áudio · ${sc.id}`} from={sc.startFrame} durationInFrames={sc.durationInFrames + 120} layout="none">
         {sc.audioCues

@@ -144,7 +144,7 @@ fs.writeFileSync(path.join(distDir, 'subtitles-369app0611.vtt'), vtt369, 'utf8')
 
 // 6. Gerar version.json
 const versionInfo = {
-  version: '1.20.313',
+  version: '1.20.314',
   build: new Date().toISOString(),
   name: 'videos-animados-369app',
   title: '369APP — Soluções Tecnológicas & Vídeos Animados 3D',
@@ -561,10 +561,10 @@ function generateIndexHtml(v) {
           </h2>
           <div class="gallery-grid" id="galleryGrid">
             <img src="./public/scenes_369app/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
-            <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.54)" loading="lazy">
-            <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.11)" loading="lazy">
-            <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(45.74)" loading="lazy">
-            <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(58.69)" loading="lazy">
+            <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.71)" loading="lazy">
+            <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.39)" loading="lazy">
+            <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(46.17)" loading="lazy">
+            <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(59.24)" loading="lazy">
           </div>
         </article>
 
@@ -587,11 +587,11 @@ function generateIndexHtml(v) {
 
   <script>
     const scenes369App = [
-      { time: 0.00, title: "1. Apps Sob Medida (iOS, Android, Web)", desc: "Sua empresa na palma da mão. Aplicativos móveis rápidos, fluidos e intuitivos para gerenciar operações em tempo real." },
-      { time: 17.54, title: "2. Sites, Portais & SEO Top 1", desc: "Presença digital dominante. Plataformas ultravelozes, indexação imediata no Google e alta conversão para o seu negócio." },
-      { time: 31.11, title: "3. Sistemas Corporativos & BI", desc: "Fim das planilhas manuais. Dashboards em tempo real, automação e inteligência de negócios para tomadas de decisão rápidas." },
-      { time: 45.74, title: "4. Inteligência Artificial no Negócio", desc: "Atendimento 24/7 com IA integrada aos seus dados, reduzindo até 90% o tempo de espera e automatizando rotinas operacionais." },
-      { time: 58.69, title: "5. 369APP • Tecnologia que Transforma", desc: "Atendimento direto com quem desenvolve, sem burocracia ou intermediários. Conecte sua empresa ao futuro em 369app.com.br." }
+      { time: 0.00, title: "1. Apps Sob Medida (iOS, Android, Web)", desc: "Sua empresa na palma da mão. Na Três Meia Nove APP, criamos aplicativos rápidos, fluidos e intuitivos para gerenciar operações em tempo real." },
+      { time: 17.71, title: "2. Sites, Portais & SEO Top 1", desc: "Presença digital dominante. Plataformas ultravelozes, indexação imediata no Google e alta conversão para o seu negócio." },
+      { time: 31.39, title: "3. Sistemas Corporativos & BI", desc: "Fim das planilhas manuais. Dashboards em tempo real, automação e inteligência de negócios para tomadas de decisão rápidas." },
+      { time: 46.17, title: "4. Inteligência Artificial no Negócio", desc: "Atendimento 24/7 com IA integrada aos seus dados, reduzindo até 90% o tempo de espera e automatizando rotinas operacionais." },
+      { time: 59.24, title: "5. 369APP • Tecnologia que Transforma", desc: "Atendimento direto com quem desenvolve. Conheça a Três Meia Nove APP e solicite sua consultoria em www.369app.com.br." }
     ];
 
     const scenesProcurarajuda = [
@@ -686,10 +686,10 @@ function generateIndexHtml(v) {
         cardLinks.innerHTML = '<a href="https://www.369app.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite 369app.com.br 🌐</a><a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Amor Que Compartilha 🤝</a>';
         galleryGrid.innerHTML = \`
           <img src="./public/scenes_369app/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
-          <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.54)" loading="lazy">
-          <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.11)" loading="lazy">
-          <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(45.74)" loading="lazy">
-          <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(58.69)" loading="lazy">
+          <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.71)" loading="lazy">
+          <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.39)" loading="lazy">
+          <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(46.17)" loading="lazy">
+          <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(59.24)" loading="lazy">
         \`;
       } else if (mode === 'procurarajuda') {
         videoSource.src = './videos/procurarajuda.mp4';

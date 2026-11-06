@@ -132,7 +132,7 @@ export const scenes369: ScenePlan369[] = [
     durationInFrames: sc(4).durationInFrames,
     voKey: "s5",
     narration:
-      "Tecnologia que transforma o seu negócio com engenharia sênior e atendimento direto, sem burocracia. Fale com quem desenvolve. Acesse www ponto 369app ponto com ponto br e solicite sua consultoria.",
+      "Tecnologia que transforma o seu negócio com engenharia sênior e atendimento direto, sem burocracia. Fale com quem desenvolve. Acesse o site da 369APP: www.369app.com.br, e solicite sua consultoria.",
     badges: [
       { text: "369APP", variant: "gold", size: "large", appearAt: 15, disappearAt: 140 },
       { text: "TECNOLOGIA QUE TRANSFORMA", variant: "success", size: "large", appearAt: 145, disappearAt: end(4) - 5 },
@@ -151,3 +151,4 @@ export const sceneAt369 = (frame: number) => {
   }
   return scenes369[0];
 };
+

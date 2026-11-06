@@ -66,3 +66,4 @@ for name, p in prompts.items():
         time.sleep(1)
 
 print("\n🎉 Imagens da 369APP concluídas!")
+

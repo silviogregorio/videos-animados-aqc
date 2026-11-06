@@ -21,3 +21,4 @@ for kw in ['Sistemas Web', 'Aplicativos Mobile', 'Inteligência Artificial', 'Co
         end = min(len(js), idx + 350)
         print(f'\n=== Contexto para {kw} ===')
         print(js[start:end])
+

@@ -12,3 +12,4 @@ for pattern in [r'serviços', r'O Que Fazemos', r'Nossos Serviços', r'Soluçõe
     for idx in matches[:3]:
         snippet = js[max(0, idx - 100):min(len(js), idx + 400)]
         print(f'[{idx}]: {snippet}\n')
+

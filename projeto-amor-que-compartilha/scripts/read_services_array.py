@@ -5,3 +5,4 @@ with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': '
     js = r.read().decode('utf-8', errors='ignore')
 
 print(js[657000:660500])
+

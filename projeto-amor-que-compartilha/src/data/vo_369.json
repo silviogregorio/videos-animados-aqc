@@ -1,861 +1,851 @@
 {
   "s1": {
     "text": "Na era digital, a sua empresa precisa estar na palma das mãos dos seus clientes. Na 369APP, desenvolvemos aplicativos móveis sob medida para iOS, Android e Web. Soluções rápidas e intuitivas para você gerenciar sua operação em tempo real e de qualquer lugar.",
-    "seconds": 16.940958,
+    "seconds": 17.109417,
     "words": [
       {
         "text": "Na",
         "start": 0.05,
-        "end": 0.205
+        "end": 0.207
       },
       {
         "text": "era",
-        "start": 0.205,
-        "end": 0.438
+        "start": 0.207,
+        "end": 0.441
       },
       {
         "text": "digital,",
-        "start": 0.438,
-        "end": 1.058
+        "start": 0.441,
+        "end": 1.068
       },
       {
         "text": "a",
-        "start": 1.058,
-        "end": 1.178
+        "start": 1.068,
+        "end": 1.188
       },
       {
         "text": "sua",
-        "start": 1.178,
-        "end": 1.41
+        "start": 1.188,
+        "end": 1.423
       },
       {
         "text": "empresa",
-        "start": 1.41,
-        "end": 1.953
+        "start": 1.423,
+        "end": 1.971
       },
       {
         "text": "precisa",
-        "start": 1.953,
-        "end": 2.495
+        "start": 1.971,
+        "end": 2.519
       },
       {
         "text": "estar",
-        "start": 2.495,
-        "end": 2.883
+        "start": 2.519,
+        "end": 2.91
       },
       {
         "text": "na",
-        "start": 2.883,
-        "end": 3.038
+        "start": 2.91,
+        "end": 3.067
       },
       {
         "text": "palma",
-        "start": 3.038,
-        "end": 3.425
+        "start": 3.067,
+        "end": 3.458
       },
       {
         "text": "das",
-        "start": 3.425,
-        "end": 3.658
+        "start": 3.458,
+        "end": 3.693
       },
       {
         "text": "mãos",
-        "start": 3.658,
-        "end": 3.968
+        "start": 3.693,
+        "end": 4.006
       },
       {
         "text": "dos",
-        "start": 3.968,
-        "end": 4.2
+        "start": 4.006,
+        "end": 4.241
       },
       {
         "text": "seus",
-        "start": 4.2,
-        "end": 4.51
+        "start": 4.241,
+        "end": 4.554
       },
       {
         "text": "clientes.",
-        "start": 4.51,
-        "end": 5.208
+        "start": 4.554,
+        "end": 5.258
       },
       {
         "text": "Na",
-        "start": 5.208,
-        "end": 5.363
+        "start": 5.258,
+        "end": 5.415
       },
       {
         "text": "369APP,",
-        "start": 5.363,
-        "end": 5.905
+        "start": 5.415,
+        "end": 5.963
       },
       {
         "text": "desenvolvemos",
-        "start": 5.905,
-        "end": 6.913
+        "start": 5.963,
+        "end": 6.981
       },
       {
         "text": "aplicativos",
-        "start": 6.913,
-        "end": 7.765
+        "start": 6.981,
+        "end": 7.842
       },
       {
         "text": "móveis",
-        "start": 7.765,
-        "end": 8.23
+        "start": 7.842,
+        "end": 8.312
       },
       {
         "text": "sob",
-        "start": 8.23,
-        "end": 8.463
+        "start": 8.312,
+        "end": 8.546
       },
       {
         "text": "medida",
-        "start": 8.463,
-        "end": 8.928
+        "start": 8.546,
+        "end": 9.016
       },
       {
         "text": "para",
-        "start": 8.928,
-        "end": 9.238
+        "start": 9.016,
+        "end": 9.329
       },
       {
         "text": "iOS,",
-        "start": 9.238,
-        "end": 9.548
+        "start": 9.329,
+        "end": 9.642
       },
       {
         "text": "Android",
-        "start": 9.548,
-        "end": 10.091
+        "start": 9.642,
+        "end": 10.19
       },
       {
         "text": "e",
-        "start": 10.091,
-        "end": 10.211
+        "start": 10.19,
+        "end": 10.31
       },
       {
         "text": "Web.",
-        "start": 10.211,
-        "end": 10.521
+        "start": 10.31,
+        "end": 10.624
       },
       {
         "text": "Soluções",
-        "start": 10.521,
-        "end": 11.141
+        "start": 10.624,
+        "end": 11.25
       },
       {
         "text": "rápidas",
-        "start": 11.141,
-        "end": 11.683
+        "start": 11.25,
+        "end": 11.798
       },
       {
         "text": "e",
-        "start": 11.683,
-        "end": 11.803
+        "start": 11.798,
+        "end": 11.918
       },
       {
         "text": "intuitivas",
-        "start": 11.803,
-        "end": 12.578
+        "start": 11.918,
+        "end": 12.701
       },
       {
         "text": "para",
-        "start": 12.578,
-        "end": 12.888
+        "start": 12.701,
+        "end": 13.014
       },
       {
         "text": "você",
-        "start": 12.888,
-        "end": 13.198
+        "start": 13.014,
+        "end": 13.327
       },
       {
         "text": "gerenciar",
-        "start": 13.198,
-        "end": 13.896
+        "start": 13.327,
+        "end": 14.031
       },
       {
         "text": "sua",
-        "start": 13.896,
-        "end": 14.128
+        "start": 14.031,
+        "end": 14.266
       },
       {
         "text": "operação",
-        "start": 14.128,
-        "end": 14.748
+        "start": 14.266,
+        "end": 14.893
       },
       {
         "text": "em",
-        "start": 14.748,
-        "end": 14.903
+        "start": 14.893,
+        "end": 15.049
       },
       {
         "text": "tempo",
-        "start": 14.903,
-        "end": 15.291
+        "start": 15.049,
+        "end": 15.441
       },
       {
         "text": "real",
-        "start": 15.291,
-        "end": 15.601
+        "start": 15.441,
+        "end": 15.754
       },
       {
         "text": "e",
-        "start": 15.601,
-        "end": 15.721
+        "start": 15.754,
+        "end": 15.874
       },
       {
         "text": "de",
-        "start": 15.721,
-        "end": 15.876
+        "start": 15.874,
+        "end": 16.03
       },
       {
         "text": "qualquer",
-        "start": 15.876,
-        "end": 16.496
+        "start": 16.03,
+        "end": 16.657
       },
       {
         "text": "lugar.",
-        "start": 16.496,
-        "end": 16.961
+        "start": 16.657,
+        "end": 17.126
       }
     ]
   },
   "s2": {
     "text": "Tenha uma presença digital de alto impacto que realmente vende. Criamos websites institucionais, portais corporativos e web apps com design premium e engenharia otimizada para colocar o seu negócio no topo das buscas do Google.",
-    "seconds": 13.214208,
+    "seconds": 13.328667,
     "words": [
       {
         "text": "Tenha",
         "start": 0.05,
-        "end": 0.387
+        "end": 0.39
       },
       {
         "text": "uma",
-        "start": 0.387,
-        "end": 0.589
+        "start": 0.39,
+        "end": 0.594
       },
       {
         "text": "presença",
-        "start": 0.589,
-        "end": 1.129
+        "start": 0.594,
+        "end": 1.138
       },
       {
         "text": "digital",
-        "start": 1.129,
-        "end": 1.601
+        "start": 1.138,
+        "end": 1.615
       },
       {
         "text": "de",
-        "start": 1.601,
-        "end": 1.736
+        "start": 1.615,
+        "end": 1.751
       },
       {
         "text": "alto",
-        "start": 1.736,
-        "end": 2.006
+        "start": 1.751,
+        "end": 2.023
       },
       {
         "text": "impacto",
-        "start": 2.006,
-        "end": 2.478
+        "start": 2.023,
+        "end": 2.499
       },
       {
         "text": "que",
-        "start": 2.478,
-        "end": 2.68
+        "start": 2.499,
+        "end": 2.703
       },
       {
         "text": "realmente",
-        "start": 2.68,
-        "end": 3.287
+        "start": 2.703,
+        "end": 3.315
       },
       {
         "text": "vende.",
-        "start": 3.287,
-        "end": 3.691
+        "start": 3.315,
+        "end": 3.723
       },
       {
         "text": "Criamos",
-        "start": 3.691,
-        "end": 4.163
+        "start": 3.723,
+        "end": 4.199
       },
       {
         "text": "websites",
-        "start": 4.163,
-        "end": 4.703
+        "start": 4.199,
+        "end": 4.744
       },
       {
         "text": "institucionais,",
-        "start": 4.703,
-        "end": 5.714
+        "start": 4.744,
+        "end": 5.764
       },
       {
         "text": "portais",
-        "start": 5.714,
-        "end": 6.186
+        "start": 5.764,
+        "end": 6.24
       },
       {
         "text": "corporativos",
-        "start": 6.186,
-        "end": 6.995
+        "start": 6.24,
+        "end": 7.056
       },
       {
         "text": "e",
-        "start": 6.995,
-        "end": 7.115
+        "start": 7.056,
+        "end": 7.176
       },
       {
         "text": "web",
-        "start": 7.115,
-        "end": 7.318
+        "start": 7.176,
+        "end": 7.381
       },
       {
         "text": "apps",
-        "start": 7.318,
-        "end": 7.587
+        "start": 7.381,
+        "end": 7.653
       },
       {
         "text": "com",
-        "start": 7.587,
-        "end": 7.79
+        "start": 7.653,
+        "end": 7.857
       },
       {
         "text": "design",
-        "start": 7.79,
-        "end": 8.194
+        "start": 7.857,
+        "end": 8.265
       },
       {
         "text": "premium",
-        "start": 8.194,
-        "end": 8.666
+        "start": 8.265,
+        "end": 8.741
       },
       {
         "text": "e",
-        "start": 8.666,
-        "end": 8.786
+        "start": 8.741,
+        "end": 8.861
       },
       {
         "text": "engenharia",
-        "start": 8.786,
-        "end": 9.461
+        "start": 8.861,
+        "end": 9.541
       },
       {
         "text": "otimizada",
-        "start": 9.461,
-        "end": 10.068
+        "start": 9.541,
+        "end": 10.154
       },
       {
         "text": "para",
-        "start": 10.068,
-        "end": 10.337
+        "start": 10.154,
+        "end": 10.426
       },
       {
         "text": "colocar",
-        "start": 10.337,
-        "end": 10.809
+        "start": 10.426,
+        "end": 10.902
       },
       {
         "text": "o",
-        "start": 10.809,
-        "end": 10.929
+        "start": 10.902,
+        "end": 11.022
       },
       {
         "text": "seu",
-        "start": 10.929,
-        "end": 11.132
+        "start": 11.022,
+        "end": 11.226
       },
       {
         "text": "negócio",
-        "start": 11.132,
-        "end": 11.604
+        "start": 11.226,
+        "end": 11.702
       },
       {
         "text": "no",
-        "start": 11.604,
-        "end": 11.738
+        "start": 11.702,
+        "end": 11.838
       },
       {
         "text": "topo",
-        "start": 11.738,
-        "end": 12.008
+        "start": 11.838,
+        "end": 12.11
       },
       {
         "text": "das",
-        "start": 12.008,
-        "end": 12.21
+        "start": 12.11,
+        "end": 12.314
       },
       {
         "text": "buscas",
-        "start": 12.21,
-        "end": 12.615
+        "start": 12.314,
+        "end": 12.722
       },
       {
         "text": "do",
-        "start": 12.615,
-        "end": 12.75
+        "start": 12.722,
+        "end": 12.858
       },
       {
         "text": "Google.",
-        "start": 12.75,
-        "end": 13.222
+        "start": 12.858,
+        "end": 13.335
       }
     ]
   },
   "s3": {
     "text": "Chega de planilhas lentas e retrabalho manual. Desenvolvemos sistemas corporativos integrados com dashboards inteligentes de Business Intelligence. Centralize seus dados, tome decisões instantâneas e reduza custos operacionais.",
-    "seconds": 14.281354,
+    "seconds": 14.429979,
     "words": [
       {
         "text": "Chega",
         "start": 0.05,
-        "end": 0.4
+        "end": 0.404
       },
       {
         "text": "de",
-        "start": 0.4,
-        "end": 0.54
+        "start": 0.404,
+        "end": 0.546
       },
       {
         "text": "planilhas",
-        "start": 0.54,
-        "end": 1.171
+        "start": 0.546,
+        "end": 1.183
       },
       {
         "text": "lentas",
-        "start": 1.171,
-        "end": 1.591
+        "start": 1.183,
+        "end": 1.608
       },
       {
         "text": "e",
-        "start": 1.591,
-        "end": 1.711
+        "start": 1.608,
+        "end": 1.728
       },
       {
         "text": "retrabalho",
-        "start": 1.711,
-        "end": 2.412
+        "start": 1.728,
+        "end": 2.435
       },
       {
         "text": "manual.",
-        "start": 2.412,
-        "end": 2.902
+        "start": 2.435,
+        "end": 2.931
       },
       {
         "text": "Desenvolvemos",
-        "start": 2.902,
-        "end": 3.813
+        "start": 2.931,
+        "end": 3.851
       },
       {
         "text": "sistemas",
-        "start": 3.813,
-        "end": 4.373
+        "start": 3.851,
+        "end": 4.418
       },
       {
         "text": "corporativos",
-        "start": 4.373,
-        "end": 5.214
+        "start": 4.418,
+        "end": 5.267
       },
       {
         "text": "integrados",
-        "start": 5.214,
-        "end": 5.915
+        "start": 5.267,
+        "end": 5.975
       },
       {
         "text": "com",
-        "start": 5.915,
-        "end": 6.125
+        "start": 5.975,
+        "end": 6.188
       },
       {
         "text": "dashboards",
-        "start": 6.125,
-        "end": 6.825
+        "start": 6.188,
+        "end": 6.896
       },
       {
         "text": "inteligentes",
-        "start": 6.825,
-        "end": 7.666
+        "start": 6.896,
+        "end": 7.745
       },
       {
         "text": "de",
-        "start": 7.666,
-        "end": 7.806
+        "start": 7.745,
+        "end": 7.887
       },
       {
         "text": "Business",
-        "start": 7.806,
-        "end": 8.367
+        "start": 7.887,
+        "end": 8.453
       },
       {
         "text": "Intelligence.",
-        "start": 8.367,
-        "end": 9.277
+        "start": 8.453,
+        "end": 9.373
       },
       {
         "text": "Centralize",
-        "start": 9.277,
-        "end": 9.978
+        "start": 9.373,
+        "end": 10.081
       },
       {
         "text": "seus",
-        "start": 9.978,
-        "end": 10.258
+        "start": 10.081,
+        "end": 10.365
       },
       {
         "text": "dados,",
-        "start": 10.258,
-        "end": 10.678
+        "start": 10.365,
+        "end": 10.789
       },
       {
         "text": "tome",
-        "start": 10.678,
-        "end": 10.959
+        "start": 10.789,
+        "end": 11.073
       },
       {
         "text": "decisões",
-        "start": 10.959,
-        "end": 11.519
+        "start": 11.073,
+        "end": 11.639
       },
       {
         "text": "instantâneas",
-        "start": 11.519,
-        "end": 12.36
+        "start": 11.639,
+        "end": 12.488
       },
       {
         "text": "e",
-        "start": 12.36,
-        "end": 12.48
+        "start": 12.488,
+        "end": 12.608
       },
       {
         "text": "reduza",
-        "start": 12.48,
-        "end": 12.9
+        "start": 12.608,
+        "end": 13.033
       },
       {
         "text": "custos",
-        "start": 12.9,
-        "end": 13.321
+        "start": 13.033,
+        "end": 13.458
       },
       {
         "text": "operacionais.",
-        "start": 13.321,
-        "end": 14.231
+        "start": 13.458,
+        "end": 14.378
       }
     ]
   },
   "s4": {
     "text": "Potencialize seus resultados com Inteligência Artificial sob medida. Integramos assistentes inteligentes aos dados da sua empresa, reduzindo o tempo de atendimento em até noventa por cento e automatizando rotinas com precisão.",
-    "seconds": 12.602771,
+    "seconds": 12.723333,
     "words": [
       {
         "text": "Potencialize",
         "start": 0.05,
-        "end": 0.809
+        "end": 0.817
       },
       {
         "text": "seus",
-        "start": 0.809,
-        "end": 1.062
+        "start": 0.817,
+        "end": 1.072
       },
       {
         "text": "resultados",
-        "start": 1.062,
-        "end": 1.695
+        "start": 1.072,
+        "end": 1.711
       },
       {
         "text": "com",
-        "start": 1.695,
-        "end": 1.885
+        "start": 1.711,
+        "end": 1.903
       },
       {
         "text": "Inteligência",
-        "start": 1.885,
-        "end": 2.644
+        "start": 1.903,
+        "end": 2.67
       },
       {
         "text": "Artificial",
-        "start": 2.644,
-        "end": 3.277
+        "start": 2.67,
+        "end": 3.309
       },
       {
         "text": "sob",
-        "start": 3.277,
-        "end": 3.467
+        "start": 3.309,
+        "end": 3.5
       },
       {
         "text": "medida.",
-        "start": 3.467,
-        "end": 3.91
+        "start": 3.5,
+        "end": 3.948
       },
       {
         "text": "Integramos",
-        "start": 3.91,
-        "end": 4.543
+        "start": 3.948,
+        "end": 4.587
       },
       {
         "text": "assistentes",
-        "start": 4.543,
-        "end": 5.239
+        "start": 4.587,
+        "end": 5.289
       },
       {
         "text": "inteligentes",
-        "start": 5.239,
-        "end": 5.998
+        "start": 5.289,
+        "end": 6.056
       },
       {
         "text": "aos",
-        "start": 5.998,
-        "end": 6.188
+        "start": 6.056,
+        "end": 6.248
       },
       {
         "text": "dados",
-        "start": 6.188,
-        "end": 6.505
+        "start": 6.248,
+        "end": 6.567
       },
       {
         "text": "da",
-        "start": 6.505,
-        "end": 6.631
+        "start": 6.567,
+        "end": 6.695
       },
       {
         "text": "sua",
-        "start": 6.631,
-        "end": 6.821
+        "start": 6.695,
+        "end": 6.887
       },
       {
         "text": "empresa,",
-        "start": 6.821,
-        "end": 7.327
+        "start": 6.887,
+        "end": 7.398
       },
       {
         "text": "reduzindo",
-        "start": 7.327,
-        "end": 7.897
+        "start": 7.398,
+        "end": 7.973
       },
       {
         "text": "o",
-        "start": 7.897,
-        "end": 8.017
+        "start": 7.973,
+        "end": 8.093
       },
       {
         "text": "tempo",
-        "start": 8.017,
-        "end": 8.333
+        "start": 8.093,
+        "end": 8.412
       },
       {
         "text": "de",
-        "start": 8.333,
-        "end": 8.46
+        "start": 8.412,
+        "end": 8.54
       },
       {
         "text": "atendimento",
-        "start": 8.46,
-        "end": 9.156
+        "start": 8.54,
+        "end": 9.243
       },
       {
         "text": "em",
-        "start": 9.156,
-        "end": 9.282
+        "start": 9.243,
+        "end": 9.371
       },
       {
         "text": "até",
-        "start": 9.282,
-        "end": 9.472
+        "start": 9.371,
+        "end": 9.562
       },
       {
         "text": "noventa",
-        "start": 9.472,
-        "end": 9.915
+        "start": 9.562,
+        "end": 10.01
       },
       {
         "text": "por",
-        "start": 9.915,
-        "end": 10.105
+        "start": 10.01,
+        "end": 10.201
       },
       {
         "text": "cento",
-        "start": 10.105,
-        "end": 10.421
+        "start": 10.201,
+        "end": 10.521
       },
       {
         "text": "e",
-        "start": 10.421,
-        "end": 10.541
+        "start": 10.521,
+        "end": 10.641
       },
       {
         "text": "automatizando",
-        "start": 10.541,
-        "end": 11.364
+        "start": 10.641,
+        "end": 11.472
       },
       {
         "text": "rotinas",
-        "start": 11.364,
-        "end": 11.807
+        "start": 11.472,
+        "end": 11.919
       },
       {
         "text": "com",
-        "start": 11.807,
-        "end": 11.997
+        "start": 11.919,
+        "end": 12.11
       },
       {
         "text": "precisão.",
-        "start": 11.997,
-        "end": 12.566
+        "start": 12.11,
+        "end": 12.686
       }
     ]
   },
   "s5": {
-    "text": "Tecnologia que transforma o seu negócio com engenharia sênior e atendimento direto, sem burocracia. Fale com quem desenvolve. Acesse www ponto 369app ponto com ponto br e solicite sua consultoria.",
-    "seconds": 14.046958,
+    "text": "Tecnologia que transforma o seu negócio com engenharia sênior e atendimento direto, sem burocracia. Fale com quem desenvolve. Acesse o site da 369APP: www.369app.com.br, e solicite sua consultoria.",
+    "seconds": 15.174813,
     "words": [
       {
         "text": "Tecnologia",
         "start": 0.05,
-        "end": 0.879
+        "end": 0.931
       },
       {
         "text": "que",
-        "start": 0.879,
-        "end": 1.128
+        "start": 0.931,
+        "end": 1.195
       },
       {
         "text": "transforma",
-        "start": 1.128,
-        "end": 1.957
+        "start": 1.195,
+        "end": 2.076
       },
       {
         "text": "o",
-        "start": 1.957,
-        "end": 2.077
+        "start": 2.076,
+        "end": 2.196
       },
       {
         "text": "seu",
-        "start": 2.077,
-        "end": 2.326
+        "start": 2.196,
+        "end": 2.46
       },
       {
         "text": "negócio",
-        "start": 2.326,
-        "end": 2.906
+        "start": 2.46,
+        "end": 3.077
       },
       {
         "text": "com",
-        "start": 2.906,
-        "end": 3.155
+        "start": 3.077,
+        "end": 3.341
       },
       {
         "text": "engenharia",
-        "start": 3.155,
-        "end": 3.984
+        "start": 3.341,
+        "end": 4.222
       },
       {
         "text": "sênior",
-        "start": 3.984,
-        "end": 4.482
+        "start": 4.222,
+        "end": 4.751
       },
       {
         "text": "e",
-        "start": 4.482,
-        "end": 4.602
+        "start": 4.751,
+        "end": 4.871
       },
       {
         "text": "atendimento",
-        "start": 4.602,
-        "end": 5.514
+        "start": 4.871,
+        "end": 5.839
       },
       {
         "text": "direto,",
-        "start": 5.514,
-        "end": 6.094
+        "start": 5.839,
+        "end": 6.456
       },
       {
         "text": "sem",
-        "start": 6.094,
-        "end": 6.343
+        "start": 6.456,
+        "end": 6.72
       },
       {
         "text": "burocracia.",
-        "start": 6.343,
-        "end": 7.255
+        "start": 6.72,
+        "end": 7.689
       },
       {
         "text": "Fale",
-        "start": 7.255,
-        "end": 7.587
+        "start": 7.689,
+        "end": 8.042
       },
       {
         "text": "com",
-        "start": 7.587,
-        "end": 7.835
+        "start": 8.042,
+        "end": 8.306
       },
       {
         "text": "quem",
-        "start": 7.835,
-        "end": 8.167
+        "start": 8.306,
+        "end": 8.658
       },
       {
         "text": "desenvolve.",
-        "start": 8.167,
-        "end": 9.079
+        "start": 8.658,
+        "end": 9.627
       },
       {
         "text": "Acesse",
-        "start": 9.079,
-        "end": 9.577
+        "start": 9.627,
+        "end": 10.156
       },
       {
-        "text": "www",
-        "start": 9.577,
-        "end": 9.825
+        "text": "o",
+        "start": 10.156,
+        "end": 10.276
       },
       {
-        "text": "ponto",
-        "start": 9.825,
-        "end": 10.24
+        "text": "site",
+        "start": 10.276,
+        "end": 10.628
       },
       {
-        "text": "369app",
-        "start": 10.24,
-        "end": 10.737
+        "text": "da",
+        "start": 10.628,
+        "end": 10.804
       },
       {
-        "text": "ponto",
-        "start": 10.737,
-        "end": 11.152
+        "text": "369APP:",
+        "start": 10.804,
+        "end": 11.421
       },
       {
-        "text": "com",
-        "start": 11.152,
-        "end": 11.401
-      },
-      {
-        "text": "ponto",
-        "start": 11.401,
-        "end": 11.815
-      },
-      {
-        "text": "br",
-        "start": 11.815,
-        "end": 11.981
+        "text": "www.369app.com.br,",
+        "start": 11.421,
+        "end": 13.006
       },
       {
         "text": "e",
-        "start": 11.981,
-        "end": 12.101
+        "start": 13.006,
+        "end": 13.126
       },
       {
         "text": "solicite",
-        "start": 12.101,
-        "end": 12.764
+        "start": 13.126,
+        "end": 13.831
       },
       {
         "text": "sua",
-        "start": 12.764,
-        "end": 13.013
+        "start": 13.831,
+        "end": 14.095
       },
       {
         "text": "consultoria.",
-        "start": 13.013,
-        "end": 14.008
+        "start": 14.095,
+        "end": 15.152
       }
     ]
   }

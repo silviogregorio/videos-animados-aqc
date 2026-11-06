@@ -1,11 +1,10 @@
 import React from "react";
-import { ThreeCanvas } from "@remotion/three";
-import { AbsoluteFill, Img, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Background369 } from "./Background369";
 import { scenes369, type SceneBadge369 } from "./data_369";
 import { Soundtrack369 } from "./Soundtrack369";
+import { TechOverlay369 } from "./TechOverlay369";
 import { voWords369, type VoKey369 } from "./timing_369";
-import { World369 } from "./World369";
 
 const FONT_FAMILY = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
@@ -389,23 +388,13 @@ const Captions369: React.FC = () => {
 };
 
 export const Sequence369: React.FC = () => {
-  const { width, height } = useVideoConfig();
-
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0f141a" }}>
-      {/* 1. Fundo com Artes Conceituais de Software */}
+    <AbsoluteFill style={{ backgroundColor: "#0b0f17" }}>
+      {/* 1. Fundo com Artes Conceituais de Software 1080x1920 Ultra-Nítidas */}
       <Background369 />
 
-      {/* 2. Cenário Tridimensional em Three.js */}
-      <ThreeCanvas
-        width={width}
-        height={height}
-        gl={{ antialias: true, alpha: true }}
-        shadows="percentage"
-        camera={{ fov: 45, near: 0.1, far: 100, position: [0, 0, 18] }}
-      >
-        <World369 />
-      </ThreeCanvas>
+      {/* 2. Camada Tecnológica 3D & Partículas de Dados */}
+      <TechOverlay369 />
 
       {/* 3. Camada de Badges de Cada Serviço */}
       {scenes369.map((sc) => (

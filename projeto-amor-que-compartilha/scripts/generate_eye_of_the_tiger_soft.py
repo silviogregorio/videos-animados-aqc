@@ -177,3 +177,4 @@ with wave.open(out_wav, "w") as wav_file:
     wav_file.writeframes(interleaved.tobytes())
 
 print(f"✓ Trilha 'Eye of the Tiger' suave gerada com sucesso em {out_wav}!")
+

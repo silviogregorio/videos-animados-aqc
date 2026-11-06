@@ -29,7 +29,7 @@ export const Soundtrack369: React.FC = () => {
       {/* 1. Trilha Instrumental Suave 'Eye of the Tiger' */}
       <Audio
         name="Eye of the Tiger (Versão Suave)"
-        src={staticFile("audio_369/eye_of_the_tiger_soft.wav")}
+        src={staticFile("audio_369/eye_of_the_tiger_soft.mp3")}
         volume={musicVolume}
       />
 
@@ -56,3 +56,4 @@ export const Soundtrack369: React.FC = () => {
     </>
   );
 };
+
