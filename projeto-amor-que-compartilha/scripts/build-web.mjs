@@ -25,6 +25,7 @@ fs.mkdirSync(distPublic, { recursive: true });
 // 2. Copiar vídeos de out/ para dist/videos/
 const outDir = path.join(projectRoot, 'out');
 const videos = [
+  '369app0611.mp4',
   'procurarajuda.mp4',
   'amarenaojulgar.mp4',
   'amor-que-compartilha.mp4',
@@ -45,7 +46,7 @@ for (const vid of videos) {
 }
 
 // 3. Copiar galerias / stills
-const galleryFiles = ['contact_sheet_final.png', 'sheet_final.png'];
+const galleryFiles = ['contact_sheet_final.png', 'sheet_final.png', 'sheet_369app0611.png'];
 for (const gf of galleryFiles) {
   const src = path.join(outDir, gf);
   const dest = path.join(distGallery, gf);
@@ -114,12 +115,39 @@ fs.writeFileSync(path.join(distDir, 'subtitles-licao.vtt'), vttLicao, 'utf8');
 fs.writeFileSync(path.join(distDir, 'subtitles-amarenaojulgar.vtt'), vttLicao, 'utf8');
 fs.writeFileSync(path.join(distDir, 'subtitles-procurarajuda.vtt'), vttLicao, 'utf8');
 
+// Legendas para 369APP
+const vo369Path = path.join(projectRoot, 'src', 'data', 'vo_369.json');
+let vo369Data = {};
+if (fs.existsSync(vo369Path)) {
+  vo369Data = JSON.parse(fs.readFileSync(vo369Path, 'utf8'));
+}
+let vtt369 = 'WEBVTT - 369APP: Tecnologia que Transforma\n\n';
+const gaps369 = [0.35, 0.35, 0.35, 0.35];
+let currTime369 = 0.45;
+for (let i = 0; i < sceneKeys.length; i++) {
+  const k = sceneKeys[i];
+  const item = vo369Data[k];
+  if (item && item.words) {
+    const words = item.words;
+    const chunkSize = 6;
+    for (let c = 0; c < words.length; c += chunkSize) {
+      const chunk = words.slice(c, c + chunkSize);
+      const start = currTime369 + chunk[0].start;
+      const end = currTime369 + chunk[chunk.length - 1].end;
+      const text = chunk.map(w => w.text).join(' ');
+      vtt369 += `${formatVttTime(start)} --> ${formatVttTime(end)}\n${text}\n\n`;
+    }
+    currTime369 += item.seconds + (gaps369[i] || 0.35);
+  }
+}
+fs.writeFileSync(path.join(distDir, 'subtitles-369app0611.vtt'), vtt369, 'utf8');
+
 // 6. Gerar version.json
 const versionInfo = {
-  version: '1.20.312',
+  version: '1.20.313',
   build: new Date().toISOString(),
-  name: 'videos-animados-aqc',
-  title: 'Amor Que Compartilha — Vídeos Animados 3D (Quem Procurar / Procurar Ajuda)',
+  name: 'videos-animados-369app',
+  title: '369APP — Soluções Tecnológicas & Vídeos Animados 3D',
   security: {
     status: 'HARDENED',
     skill: 'skillsegurancamaxima',
@@ -438,18 +466,18 @@ function generateIndexHtml(v) {
 
   <header>
     <a href="/" class="brand">
-      <img src="./public/brand/logo-clean.png" alt="Amor Que Compartilha Logo" width="40" height="40">
+      <img src="./public/brand_369/logo.png" alt="369APP Logo" width="40" height="40">
       <div>
-        <h1>Amor Que Compartilha</h1>
-        <span>Vídeos Animados 3D • Conscientização</span>
+        <h1>369APP & Amor Que Compartilha</h1>
+        <span>Vídeos Animados 3D • Tecnologia & Conscientização</span>
       </div>
     </a>
     <div class="nav-actions">
       <div class="security-badge">
         <span>🛡️</span> OWASP 2025 / LGPD Hardened
       </div>
-      <a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        Conheça a Causa ↗
+      <a href="https://www.369app.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Visite 369app.com.br ↗
       </a>
     </div>
   </header>
@@ -457,7 +485,10 @@ function generateIndexHtml(v) {
   <main class="container">
 
     <div class="hero-tabs">
-      <button class="tab-btn active" id="tab-procurarajuda" onclick="switchVideo('procurarajuda')">
+      <button class="tab-btn active" id="tab-369app" onclick="switchVideo('369app')">
+        ⚡ 369APP • Soluções Tecnológicas & IA
+      </button>
+      <button class="tab-btn" id="tab-procurarajuda" onclick="switchVideo('procurarajuda')">
         🆘 Quem Procurar (Ligue 188 • CAPS • Fernandópolis)
       </button>
       <button class="tab-btn" id="tab-amarenaojulgar" onclick="switchVideo('amarenaojulgar')">
@@ -476,9 +507,9 @@ function generateIndexHtml(v) {
       <!-- COLUNA DO PLAYER -->
       <section class="video-card" aria-label="Reprodutor de Vídeo">
         <div class="video-wrapper">
-          <video id="mainVideo" controls preload="metadata" playsinline poster="./gallery/contact_sheet_final.png">
-            <source id="videoSource" src="./videos/procurarajuda.mp4" type="video/mp4">
-            <track id="videoTrack" kind="subtitles" src="./subtitles-procurarajuda.vtt" srclang="pt-BR" label="Português" default>
+          <video id="mainVideo" controls preload="metadata" playsinline poster="./gallery/sheet_369app0611.png">
+            <source id="videoSource" src="./videos/369app0611.mp4" type="video/mp4">
+            <track id="videoTrack" kind="subtitles" src="./subtitles-369app0611.vtt" srclang="pt-BR" label="Português" default>
             Seu navegador não suporta reprodução direta de vídeo HTML5.
           </video>
         </div>
@@ -486,7 +517,7 @@ function generateIndexHtml(v) {
           <div class="video-meta" id="videoResolution">
             📐 1080×1920 (9:16) • 30 fps • H.264
           </div>
-          <a id="btnDownload" href="./videos/procurarajuda.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
+          <a id="btnDownload" href="./videos/369app0611.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
             📥 Baixar MP4
           </a>
         </div>
@@ -505,20 +536,20 @@ function generateIndexHtml(v) {
           </div>
         </article>
 
-        <!-- CARD SOBRE O PROJETO SOCIAL -->
-        <article class="card">
-          <h2 class="card-title">
-            <span>🤝</span> Projeto Social Amor Que Compartilha
+        <!-- CARD SOBRE O PROJETO SOCIAL / EMPRESA -->
+        <article class="card" id="cardInfo">
+          <h2 class="card-title" id="cardTitle">
+            <span>⚡</span> 369APP — Tecnologia que Transforma
           </h2>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
-            O Projeto Social Amor Que Compartilha acolhe famílias, promove a inclusão de pessoas neurodivergentes e leva amor, assistência e dignidade para quem mais precisa. Conecte antes de corrigir. Ame antes de julgar.
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.75rem;" id="cardDesc">
+            Transformamos desafios de negócios em software de alto impacto. Apps móveis iOS/Android/Web sob medida, sistemas corporativos & BI, inteligência artificial integrada aos dados da empresa e portais de alta conversão SEO Top 1 Google. Fale direto com quem desenvolve.
           </p>
-          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
-            <a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              Visite o Portal Oficial 🌐
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;" id="cardLinks">
+            <a href="https://www.369app.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Visite 369app.com.br 🌐
             </a>
-            <a href="https://instagram.com/amor.que.compartilha" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              Siga no Instagram 📷
+            <a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Amor Que Compartilha 🤝
             </a>
           </div>
         </article>
@@ -528,12 +559,12 @@ function generateIndexHtml(v) {
           <h2 class="card-title">
             <span>🖼️</span> Galeria de Frames 3D em Alta Resolução
           </h2>
-          <div class="gallery-grid">
-            <img src="./public/scenes/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
-            <img src="./public/scenes/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(12.85)" loading="lazy">
-            <img src="./public/scenes/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(25.80)" loading="lazy">
-            <img src="./public/scenes/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(38.47)" loading="lazy">
-            <img src="./public/scenes/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(50.53)" loading="lazy">
+          <div class="gallery-grid" id="galleryGrid">
+            <img src="./public/scenes_369app/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+            <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.54)" loading="lazy">
+            <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.11)" loading="lazy">
+            <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(45.74)" loading="lazy">
+            <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(58.69)" loading="lazy">
           </div>
         </article>
 
@@ -545,7 +576,8 @@ function generateIndexHtml(v) {
 
   <footer>
     <p>
-      © 2026 <strong>Projeto Social Amor Que Compartilha</strong> • CNPJ e Causas Sociais Protegidas • 
+      © 2026 <strong>369APP Tecnologia</strong> & <strong>Projeto Social Amor Que Compartilha</strong> • 
+      <a href="https://www.369app.com.br" target="_blank" rel="noopener noreferrer">369app.com.br</a> • 
       <a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer">amorquecompartilha.com.br</a>
     </p>
     <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #64748b;">
@@ -554,6 +586,14 @@ function generateIndexHtml(v) {
   </footer>
 
   <script>
+    const scenes369App = [
+      { time: 0.00, title: "1. Apps Sob Medida (iOS, Android, Web)", desc: "Sua empresa na palma da mão. Aplicativos móveis rápidos, fluidos e intuitivos para gerenciar operações em tempo real." },
+      { time: 17.54, title: "2. Sites, Portais & SEO Top 1", desc: "Presença digital dominante. Plataformas ultravelozes, indexação imediata no Google e alta conversão para o seu negócio." },
+      { time: 31.11, title: "3. Sistemas Corporativos & BI", desc: "Fim das planilhas manuais. Dashboards em tempo real, automação e inteligência de negócios para tomadas de decisão rápidas." },
+      { time: 45.74, title: "4. Inteligência Artificial no Negócio", desc: "Atendimento 24/7 com IA integrada aos seus dados, reduzindo até 90% o tempo de espera e automatizando rotinas operacionais." },
+      { time: 58.69, title: "5. 369APP • Tecnologia que Transforma", desc: "Atendimento direto com quem desenvolve, sem burocracia ou intermediários. Conecte sua empresa ao futuro em 369app.com.br." }
+    ];
+
     const scenesProcurarajuda = [
       { time: 0.00, title: "1. Você Não Está Sozinho", desc: "Ansiedade e depressão. Sentir dor não é fraqueza e pedir ajuda é o maior ato de coragem." },
       { time: 11.45, title: "2. Ligue 188 (CVV)", desc: "Governo Federal. Apoio emocional gratuito, sigiloso e disponível 24 horas por dia." },
@@ -589,12 +629,13 @@ function generateIndexHtml(v) {
       { time: 79.00, title: "8. Amar e Compreender", desc: "Pessoas neurodivergentes não precisam ser consertadas, precisam de amor." }
     ];
 
-    let currentMode = 'procurarajuda';
+    let currentMode = '369app';
     const video = document.getElementById('mainVideo');
     const videoSource = document.getElementById('videoSource');
     const videoTrack = document.getElementById('videoTrack');
     const sceneListContainer = document.getElementById('sceneList');
     const btnDownload = document.getElementById('btnDownload');
+    const galleryGrid = document.getElementById('galleryGrid');
 
     function renderScenes(list) {
       sceneListContainer.innerHTML = '';
@@ -625,31 +666,91 @@ function generateIndexHtml(v) {
 
     function switchVideo(mode) {
       currentMode = mode;
+      document.getElementById('tab-369app').classList.toggle('active', mode === '369app');
       document.getElementById('tab-procurarajuda').classList.toggle('active', mode === 'procurarajuda');
       document.getElementById('tab-amarenaojulgar').classList.toggle('active', mode === 'amarenaojulgar');
       document.getElementById('tab-licao').classList.toggle('active', mode === 'licao');
       document.getElementById('tab-neuro').classList.toggle('active', mode === 'neuro');
 
-      if (mode === 'procurarajuda') {
+      const cardTitle = document.getElementById('cardTitle');
+      const cardDesc = document.getElementById('cardDesc');
+      const cardLinks = document.getElementById('cardLinks');
+
+      if (mode === '369app') {
+        videoSource.src = './videos/369app0611.mp4';
+        videoTrack.src = './subtitles-369app0611.vtt';
+        btnDownload.href = './videos/369app0611.mp4';
+        renderScenes(scenes369App);
+        cardTitle.innerHTML = '<span>⚡</span> 369APP — Tecnologia que Transforma';
+        cardDesc.textContent = 'Transformamos desafios de negócios em software de alto impacto. Apps móveis iOS/Android/Web sob medida, sistemas corporativos & BI, inteligência artificial integrada aos dados da empresa e portais de alta conversão SEO Top 1 Google. Fale direto com quem desenvolve.';
+        cardLinks.innerHTML = '<a href="https://www.369app.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite 369app.com.br 🌐</a><a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Amor Que Compartilha 🤝</a>';
+        galleryGrid.innerHTML = \`
+          <img src="./public/scenes_369app/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+          <img src="./public/scenes_369app/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(17.54)" loading="lazy">
+          <img src="./public/scenes_369app/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(31.11)" loading="lazy">
+          <img src="./public/scenes_369app/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(45.74)" loading="lazy">
+          <img src="./public/scenes_369app/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(58.69)" loading="lazy">
+        \`;
+      } else if (mode === 'procurarajuda') {
         videoSource.src = './videos/procurarajuda.mp4';
         videoTrack.src = './subtitles-procurarajuda.vtt';
         btnDownload.href = './videos/procurarajuda.mp4';
         renderScenes(scenesProcurarajuda);
+        cardTitle.innerHTML = '<span>🤝</span> Projeto Social Amor Que Compartilha';
+        cardDesc.textContent = 'O Projeto Social Amor Que Compartilha acolhe famílias, promove a inclusão de pessoas neurodivergentes e leva amor, assistência e dignidade para quem mais precisa. Conecte antes de corrigir. Ame antes de julgar.';
+        cardLinks.innerHTML = '<a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite o Portal Oficial 🌐</a><a href="https://instagram.com/amor.que.compartilha" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Siga no Instagram 📷</a>';
+        galleryGrid.innerHTML = \`
+          <img src="./public/scenes_procura/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+          <img src="./public/scenes_procura/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(11.45)" loading="lazy">
+          <img src="./public/scenes_procura/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(26.61)" loading="lazy">
+          <img src="./public/scenes_procura/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(39.42)" loading="lazy">
+          <img src="./public/scenes_procura/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(52.80)" loading="lazy">
+        \`;
       } else if (mode === 'amarenaojulgar') {
         videoSource.src = './videos/amarenaojulgar.mp4';
         videoTrack.src = './subtitles-amarenaojulgar.vtt';
         btnDownload.href = './videos/amarenaojulgar.mp4';
         renderScenes(scenesAmarenaojulgar);
+        cardTitle.innerHTML = '<span>🤝</span> Projeto Social Amor Que Compartilha';
+        cardDesc.textContent = 'O Projeto Social Amor Que Compartilha acolhe famílias, promove a inclusão de pessoas neurodivergentes e leva amor, assistência e dignidade para quem mais precisa. Conecte antes de corrigir. Ame antes de julgar.';
+        cardLinks.innerHTML = '<a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite o Portal Oficial 🌐</a><a href="https://instagram.com/amor.que.compartilha" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Siga no Instagram 📷</a>';
+        galleryGrid.innerHTML = \`
+          <img src="./public/scenes_amarenaojulgar/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+          <img src="./public/scenes_amarenaojulgar/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(13.34)" loading="lazy">
+          <img src="./public/scenes_amarenaojulgar/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(27.46)" loading="lazy">
+          <img src="./public/scenes_amarenaojulgar/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(37.82)" loading="lazy">
+          <img src="./public/scenes_amarenaojulgar/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(51.42)" loading="lazy">
+        \`;
       } else if (mode === 'licao') {
         videoSource.src = './videos/licao-de-vida.mp4';
         videoTrack.src = './subtitles-licao.vtt';
         btnDownload.href = './videos/licao-de-vida.mp4';
         renderScenes(scenesLicao);
+        cardTitle.innerHTML = '<span>🤝</span> Projeto Social Amor Que Compartilha';
+        cardDesc.textContent = 'O Projeto Social Amor Que Compartilha acolhe famílias, promove a inclusão de pessoas neurodivergentes e leva amor, assistência e dignidade para quem mais precisa. Conecte antes de corrigir. Ame antes de julgar.';
+        cardLinks.innerHTML = '<a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite o Portal Oficial 🌐</a><a href="https://instagram.com/amor.que.compartilha" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Siga no Instagram 📷</a>';
+        galleryGrid.innerHTML = \`
+          <img src="./public/scenes/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+          <img src="./public/scenes/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(12.85)" loading="lazy">
+          <img src="./public/scenes/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(25.80)" loading="lazy">
+          <img src="./public/scenes/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(38.47)" loading="lazy">
+          <img src="./public/scenes/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(50.53)" loading="lazy">
+        \`;
       } else {
         videoSource.src = './videos/amor-que-compartilha.mp4';
         videoTrack.src = '';
         btnDownload.href = './videos/amor-que-compartilha.mp4';
         renderScenes(scenesNeuro);
+        cardTitle.innerHTML = '<span>🤝</span> Projeto Social Amor Que Compartilha';
+        cardDesc.textContent = 'O Projeto Social Amor Que Compartilha acolhe famílias, promove a inclusão de pessoas neurodivergentes e leva amor, assistência e dignidade para quem mais precisa. Conecte antes de corrigir. Ame antes de julgar.';
+        cardLinks.innerHTML = '<a href="https://www.amorquecompartilha.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visite o Portal Oficial 🌐</a><a href="https://instagram.com/amor.que.compartilha" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Siga no Instagram 📷</a>';
+        galleryGrid.innerHTML = \`
+          <img src="./public/scenes/scene1.jpg" alt="Cena 1" class="gallery-img" onclick="seekToTime(0)" loading="lazy">
+          <img src="./public/scenes/scene2.jpg" alt="Cena 2" class="gallery-img" onclick="seekToTime(10.00)" loading="lazy">
+          <img src="./public/scenes/scene3.jpg" alt="Cena 3" class="gallery-img" onclick="seekToTime(20.00)" loading="lazy">
+          <img src="./public/scenes/scene4.jpg" alt="Cena 4" class="gallery-img" onclick="seekToTime(32.00)" loading="lazy">
+          <img src="./public/scenes/scene5.jpg" alt="Cena 5" class="gallery-img" onclick="seekToTime(44.00)" loading="lazy">
+        \`;
       }
       video.load();
       video.play().catch(() => {});
@@ -657,7 +758,8 @@ function generateIndexHtml(v) {
 
     // Sincronizar cena ativa durante o playback
     video.addEventListener('timeupdate', () => {
-      let list = scenesProcurarajuda;
+      let list = scenes369App;
+      if (currentMode === 'procurarajuda') list = scenesProcurarajuda;
       if (currentMode === 'amarenaojulgar') list = scenesAmarenaojulgar;
       if (currentMode === 'licao') list = scenesLicao;
       if (currentMode === 'neuro') list = scenesNeuro;
@@ -673,8 +775,8 @@ function generateIndexHtml(v) {
       });
     });
 
-    // Inicializar lista padrão
-    renderScenes(scenesProcurarajuda);
+    // Inicializar lista padrão (369APP)
+    renderScenes(scenes369App);
 
     // Auto-atualizador sem travar
     setInterval(() => {

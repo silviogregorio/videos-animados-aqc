@@ -79,3 +79,4 @@ for name, p in prompts.items():
         print(f"  ⚠️ Falha ao obter {name}.jpg via pollinations, gerando fallback de alta qualidade...")
 
 print("\n🎉 Processo de imagens concluído!")
+
