@@ -122,7 +122,7 @@ const BrandOverlay: React.FC = () => {
           textShadow: "0 2px 6px rgba(0, 0, 0, 0.9)",
         }}
       >
-        AMAR SEM JULGAR • O PODER DO ABRAÇO • ERGUER AO INVÉS DE DERRUBAR • ENSINAR COM AMOR
+        CVV 188 • REDE SUS / CAPS & UBS • FERNANDÓPOLIS: CAPS II & UPA • SAMU 192
       </div>
     </AbsoluteFill>
   );
@@ -189,7 +189,7 @@ const InstituicaoCard: React.FC = () => {
         </div>
       </div>
       <div style={{ fontSize: 20, fontWeight: 700, color: "rgba(255,255,255,0.9)", fontStyle: "italic", marginTop: 4 }}>
-        "Viver bem é colocar o amor em ação todos os dias."
+        "Pedir ajuda é um ato de coragem. Você não está sozinho."
       </div>
     </div>
   );

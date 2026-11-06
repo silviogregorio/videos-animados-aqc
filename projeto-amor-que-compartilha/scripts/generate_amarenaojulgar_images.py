@@ -126,3 +126,4 @@ for name, p in prompts.items():
         print(f"  ⚠️ Não foi possível gerar {name}.jpg com as chaves disponíveis.")
 
 print("\n🎉 Processo de geração de imagens concluído!")
+

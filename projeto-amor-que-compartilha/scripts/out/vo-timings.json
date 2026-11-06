@@ -1,1017 +1,947 @@
 {
   "lines": {
     "s1": {
-      "text": "É muito fácil apontar o dedo e julgar quem tropeça pelo caminho. Mas quem julga nunca sabe a dor silenciosa que o outro carrega no peito. A verdadeira sabedoria da vida começa quando trocamos a crítica pela compreensão.",
+      "text": "A ansiedade e a depressão podem fazer parecer que você está sozinho em uma noite escura. Mas saiba: sentir dor não é fraqueza, e pedir ajuda é o maior ato de coragem que existe.",
       "words": [
         {
-          "text": "É",
-          "start": 0.097,
-          "end": 0.191
+          "text": "A",
+          "start": 0.1,
+          "end": 0.188
         },
         {
-          "text": "muito",
-          "start": 0.203,
-          "end": 0.604
-        },
-        {
-          "text": "fácil",
-          "start": 0.616,
-          "end": 0.934
-        },
-        {
-          "text": "apontar",
-          "start": 0.946,
-          "end": 1.359
-        },
-        {
-          "text": "o",
-          "start": 1.371,
-          "end": 1.43
-        },
-        {
-          "text": "dedo",
-          "start": 1.442,
-          "end": 1.724
+          "text": "ansiedade",
+          "start": 0.2,
+          "end": 0.85
         },
         {
           "text": "e",
-          "start": 1.736,
-          "end": 1.76
-        },
-        {
-          "text": "julgar",
-          "start": 1.772,
-          "end": 2.161
-        },
-        {
-          "text": "quem",
-          "start": 2.173,
-          "end": 2.349
-        },
-        {
-          "text": "tropeça",
-          "start": 2.361,
-          "end": 2.821
-        },
-        {
-          "text": "pelo",
-          "start": 2.833,
-          "end": 3.022
-        },
-        {
-          "text": "caminho",
-          "start": 3.034,
-          "end": 3.423
-        },
-        {
-          "text": "Mas",
-          "start": 4.234,
-          "end": 4.517
-        },
-        {
-          "text": "quem",
-          "start": 4.528,
-          "end": 4.729
-        },
-        {
-          "text": "julga",
-          "start": 4.741,
-          "end": 5.071
-        },
-        {
-          "text": "nunca",
-          "start": 5.083,
-          "end": 5.425
-        },
-        {
-          "text": "sabe",
-          "start": 5.436,
-          "end": 5.708
+          "start": 0.863,
+          "end": 0.888
         },
         {
           "text": "a",
-          "start": 5.719,
-          "end": 5.79
+          "start": 0.9,
+          "end": 0.938
         },
         {
-          "text": "dor",
-          "start": 5.802,
-          "end": 5.979
+          "text": "depressão",
+          "start": 0.95,
+          "end": 1.462
         },
         {
-          "text": "silenciosa",
-          "start": 5.991,
-          "end": 6.71
+          "text": "podem",
+          "start": 1.475,
+          "end": 1.713
+        },
+        {
+          "text": "fazer",
+          "start": 1.725,
+          "end": 2.025
+        },
+        {
+          "text": "parecer",
+          "start": 2.038,
+          "end": 2.513
         },
         {
           "text": "que",
-          "start": 6.722,
-          "end": 6.816
+          "start": 2.525,
+          "end": 2.625
+        },
+        {
+          "text": "você",
+          "start": 2.638,
+          "end": 2.863
+        },
+        {
+          "text": "está",
+          "start": 2.875,
+          "end": 3.05
+        },
+        {
+          "text": "sozinho",
+          "start": 3.062,
+          "end": 3.638
+        },
+        {
+          "text": "em",
+          "start": 3.65,
+          "end": 3.712
+        },
+        {
+          "text": "uma",
+          "start": 3.725,
+          "end": 3.9
+        },
+        {
+          "text": "noite",
+          "start": 3.913,
+          "end": 4.225
+        },
+        {
+          "text": "escura",
+          "start": 4.237,
+          "end": 4.688
+        },
+        {
+          "text": "Mas",
+          "start": 5.55,
+          "end": 5.825
+        },
+        {
+          "text": "saiba",
+          "start": 5.838,
+          "end": 6.225
+        },
+        {
+          "text": "sentir",
+          "start": 6.55,
+          "end": 6.938
+        },
+        {
+          "text": "dor",
+          "start": 6.95,
+          "end": 7.2
+        },
+        {
+          "text": "não",
+          "start": 7.213,
+          "end": 7.375
+        },
+        {
+          "text": "é",
+          "start": 7.388,
+          "end": 7.438
+        },
+        {
+          "text": "fraqueza",
+          "start": 7.45,
+          "end": 7.987
+        },
+        {
+          "text": "e",
+          "start": 8.3,
+          "end": 8.363
+        },
+        {
+          "text": "pedir",
+          "start": 8.375,
+          "end": 8.675
+        },
+        {
+          "text": "ajuda",
+          "start": 8.688,
+          "end": 9.062
+        },
+        {
+          "text": "é",
+          "start": 9.075,
+          "end": 9.112
         },
         {
           "text": "o",
-          "start": 6.828,
-          "end": 6.922
+          "start": 9.125,
+          "end": 9.15
         },
         {
-          "text": "outro",
-          "start": 6.934,
-          "end": 7.193
+          "text": "maior",
+          "start": 9.162,
+          "end": 9.487
         },
         {
-          "text": "carrega",
-          "start": 7.205,
-          "end": 7.618
+          "text": "ato",
+          "start": 9.5,
+          "end": 9.762
         },
         {
-          "text": "no",
-          "start": 7.63,
-          "end": 7.736
+          "text": "de",
+          "start": 9.775,
+          "end": 9.863
         },
         {
-          "text": "peito",
-          "start": 7.748,
-          "end": 8.054
+          "text": "coragem",
+          "start": 9.875,
+          "end": 10.338
         },
         {
-          "text": "A",
-          "start": 8.868,
-          "end": 8.986
+          "text": "que",
+          "start": 10.35,
+          "end": 10.475
         },
         {
-          "text": "verdadeira",
-          "start": 8.998,
-          "end": 9.54
-        },
-        {
-          "text": "sabedoria",
-          "start": 9.552,
-          "end": 10.071
-        },
-        {
-          "text": "da",
-          "start": 10.083,
-          "end": 10.2
-        },
-        {
-          "text": "vida",
-          "start": 10.212,
-          "end": 10.448
-        },
-        {
-          "text": "começa",
-          "start": 10.46,
-          "end": 10.896
-        },
-        {
-          "text": "quando",
-          "start": 10.908,
-          "end": 11.097
-        },
-        {
-          "text": "trocamos",
-          "start": 11.108,
-          "end": 11.498
-        },
-        {
-          "text": "a",
-          "start": 11.509,
-          "end": 11.651
-        },
-        {
-          "text": "crítica",
-          "start": 11.663,
-          "end": 12.076
-        },
-        {
-          "text": "pela",
-          "start": 12.087,
-          "end": 12.276
-        },
-        {
-          "text": "compreensão",
-          "start": 12.288,
-          "end": 12.96
+          "text": "existe",
+          "start": 10.488,
+          "end": 11.025
         }
       ]
     },
     "s2": {
-      "text": "Muitas vezes, quem está sofrendo não precisa de sermões ou cobranças. Só precisa de um abraço sincero que acolha a alma sem fazer perguntas. Um gesto de carinho tem a força de restaurar pedaços que palavras duras quebraram.",
+      "text": "Em qualquer momento de angústia ou pensamentos difíceis, ligue 188. O CVV, Centro de Valorização da Vida, oferece apoio emocional gratuito, sigiloso e disponível vinte e quatro horas por dia, todos os dias.",
       "words": [
         {
-          "text": "Muitas",
-          "start": 0.097,
-          "end": 0.522
+          "text": "Em",
+          "start": 0.1,
+          "end": 0.25
         },
         {
-          "text": "vezes",
-          "start": 0.533,
-          "end": 0.958
+          "text": "qualquer",
+          "start": 0.263,
+          "end": 0.663
         },
         {
-          "text": "quem",
-          "start": 1.194,
-          "end": 1.347
-        },
-        {
-          "text": "está",
-          "start": 1.359,
-          "end": 1.559
-        },
-        {
-          "text": "sofrendo",
-          "start": 1.571,
-          "end": 2.008
-        },
-        {
-          "text": "não",
-          "start": 2.019,
-          "end": 2.196
-        },
-        {
-          "text": "precisa",
-          "start": 2.208,
-          "end": 2.633
+          "text": "momento",
+          "start": 0.675,
+          "end": 1.15
         },
         {
           "text": "de",
-          "start": 2.644,
-          "end": 2.727
+          "start": 1.163,
+          "end": 1.263
         },
         {
-          "text": "sermões",
-          "start": 2.739,
-          "end": 3.163
+          "text": "angústia",
+          "start": 1.275,
+          "end": 1.737
         },
         {
           "text": "ou",
-          "start": 3.175,
-          "end": 3.317
+          "start": 1.75,
+          "end": 1.812
         },
         {
-          "text": "cobranças",
-          "start": 3.328,
-          "end": 3.989
+          "text": "pensamentos",
+          "start": 1.825,
+          "end": 2.513
         },
         {
-          "text": "Só",
-          "start": 4.8,
-          "end": 5.012
+          "text": "difíceis",
+          "start": 2.525,
+          "end": 3.175
         },
         {
-          "text": "precisa",
-          "start": 5.024,
-          "end": 5.448
+          "text": "ligue",
+          "start": 3.425,
+          "end": 3.762
         },
         {
-          "text": "de",
-          "start": 5.46,
-          "end": 5.519
+          "text": "188",
+          "start": 3.775,
+          "end": 4.9
         },
         {
-          "text": "um",
-          "start": 5.531,
-          "end": 5.625
+          "text": "O",
+          "start": 5.763,
+          "end": 5.875
         },
         {
-          "text": "abraço",
-          "start": 5.637,
-          "end": 6.05
+          "text": "CVV",
+          "start": 5.888,
+          "end": 6.4
         },
         {
-          "text": "sincero",
-          "start": 6.061,
-          "end": 6.604
-        },
-        {
-          "text": "que",
-          "start": 6.616,
-          "end": 6.698
-        },
-        {
-          "text": "acolha",
-          "start": 6.71,
-          "end": 7.052
-        },
-        {
-          "text": "a",
-          "start": 7.064,
-          "end": 7.099
-        },
-        {
-          "text": "alma",
-          "start": 7.111,
-          "end": 7.417
-        },
-        {
-          "text": "sem",
-          "start": 7.429,
-          "end": 7.63
-        },
-        {
-          "text": "fazer",
-          "start": 7.641,
-          "end": 7.96
-        },
-        {
-          "text": "perguntas",
-          "start": 7.972,
-          "end": 8.644
-        },
-        {
-          "text": "Um",
-          "start": 9.458,
-          "end": 9.634
-        },
-        {
-          "text": "gesto",
-          "start": 9.646,
-          "end": 10.035
+          "text": "Centro",
+          "start": 6.688,
+          "end": 7.088
         },
         {
           "text": "de",
-          "start": 10.047,
-          "end": 10.118
+          "start": 7.1,
+          "end": 7.188
         },
         {
-          "text": "carinho",
-          "start": 10.13,
-          "end": 10.542
+          "text": "Valorização",
+          "start": 7.2,
+          "end": 7.85
         },
         {
-          "text": "tem",
-          "start": 10.554,
-          "end": 10.66
+          "text": "da",
+          "start": 7.862,
+          "end": 7.987
         },
         {
-          "text": "a",
-          "start": 10.672,
-          "end": 10.755
+          "text": "Vida",
+          "start": 8.0,
+          "end": 8.312
         },
         {
-          "text": "força",
-          "start": 10.767,
-          "end": 11.144
+          "text": "oferece",
+          "start": 8.625,
+          "end": 9.1
         },
         {
-          "text": "de",
-          "start": 11.156,
-          "end": 11.238
+          "text": "apoio",
+          "start": 9.113,
+          "end": 9.45
         },
         {
-          "text": "restaurar",
-          "start": 11.25,
-          "end": 11.698
+          "text": "emocional",
+          "start": 9.463,
+          "end": 9.9
         },
         {
-          "text": "pedaços",
-          "start": 11.71,
-          "end": 12.217
+          "text": "gratuito",
+          "start": 9.912,
+          "end": 10.512
         },
         {
-          "text": "que",
-          "start": 12.229,
-          "end": 12.347
+          "text": "sigiloso",
+          "start": 10.85,
+          "end": 11.5
         },
         {
-          "text": "palavras",
-          "start": 12.358,
-          "end": 12.83
+          "text": "e",
+          "start": 11.512,
+          "end": 11.55
         },
         {
-          "text": "duras",
-          "start": 12.842,
-          "end": 13.184
+          "text": "disponível",
+          "start": 11.562,
+          "end": 12.188
         },
         {
-          "text": "quebraram",
-          "start": 13.196,
-          "end": 13.715
+          "text": "vinte",
+          "start": 12.2,
+          "end": 12.425
+        },
+        {
+          "text": "e",
+          "start": 12.438,
+          "end": 12.45
+        },
+        {
+          "text": "quatro",
+          "start": 12.463,
+          "end": 12.775
+        },
+        {
+          "text": "horas",
+          "start": 12.787,
+          "end": 13.075
+        },
+        {
+          "text": "por",
+          "start": 13.088,
+          "end": 13.263
+        },
+        {
+          "text": "dia",
+          "start": 13.275,
+          "end": 13.588
+        },
+        {
+          "text": "todos",
+          "start": 13.787,
+          "end": 14.112
+        },
+        {
+          "text": "os",
+          "start": 14.125,
+          "end": 14.325
+        },
+        {
+          "text": "dias",
+          "start": 14.338,
+          "end": 14.787
         }
       ]
     },
     "s3": {
-      "text": "Suas palavras têm o poder de derrubar ou de erguer uma vida. Seja a voz que acalma a tempestade, que devolve a dignidade e lembra ao caído o valor precioso que ele tem diante da vida.",
+      "text": "Pelo SUS, no Estado de São Paulo e em todo o país, você tem direito a atendimento médico e psicológico gratuito nos CAPS, Centros de Atenção Psicossocial, e nas Unidades Básicas de Saúde perto de você.",
       "words": [
         {
-          "text": "Suas",
-          "start": 0.097,
-          "end": 0.404
+          "text": "Pelo",
+          "start": 0.1,
+          "end": 0.363
         },
         {
-          "text": "palavras",
-          "start": 0.416,
-          "end": 0.923
+          "text": "SUS",
+          "start": 0.375,
+          "end": 0.825
         },
         {
-          "text": "têm",
-          "start": 0.934,
-          "end": 1.064
+          "text": "no",
+          "start": 0.938,
+          "end": 1.038
         },
         {
-          "text": "o",
-          "start": 1.076,
-          "end": 1.135
-        },
-        {
-          "text": "poder",
-          "start": 1.147,
-          "end": 1.465
+          "text": "Estado",
+          "start": 1.05,
+          "end": 1.438
         },
         {
           "text": "de",
-          "start": 1.477,
-          "end": 1.548
+          "start": 1.45,
+          "end": 1.537
         },
         {
-          "text": "derrubar",
-          "start": 1.559,
-          "end": 2.055
+          "text": "São",
+          "start": 1.55,
+          "end": 1.762
         },
         {
-          "text": "ou",
-          "start": 2.067,
-          "end": 2.161
-        },
-        {
-          "text": "de",
-          "start": 2.173,
-          "end": 2.243
-        },
-        {
-          "text": "erguer",
-          "start": 2.255,
-          "end": 2.526
-        },
-        {
-          "text": "uma",
-          "start": 2.538,
-          "end": 2.715
-        },
-        {
-          "text": "vida",
-          "start": 2.727,
-          "end": 3.033
-        },
-        {
-          "text": "Seja",
-          "start": 3.844,
-          "end": 4.21
-        },
-        {
-          "text": "a",
-          "start": 4.222,
-          "end": 4.245
-        },
-        {
-          "text": "voz",
-          "start": 4.257,
-          "end": 4.54
-        },
-        {
-          "text": "que",
-          "start": 4.552,
-          "end": 4.634
-        },
-        {
-          "text": "acalma",
-          "start": 4.646,
-          "end": 4.988
-        },
-        {
-          "text": "a",
-          "start": 5.0,
-          "end": 5.035
-        },
-        {
-          "text": "tempestade",
-          "start": 5.047,
-          "end": 5.684
-        },
-        {
-          "text": "que",
-          "start": 5.908,
-          "end": 6.026
-        },
-        {
-          "text": "devolve",
-          "start": 6.038,
-          "end": 6.415
-        },
-        {
-          "text": "a",
-          "start": 6.427,
-          "end": 6.474
-        },
-        {
-          "text": "dignidade",
-          "start": 6.486,
-          "end": 7.028
+          "text": "Paulo",
+          "start": 1.775,
+          "end": 2.125
         },
         {
           "text": "e",
-          "start": 7.04,
-          "end": 7.052
+          "start": 2.138,
+          "end": 2.15
         },
         {
-          "text": "lembra",
-          "start": 7.064,
-          "end": 7.311
+          "text": "em",
+          "start": 2.163,
+          "end": 2.275
         },
         {
-          "text": "ao",
-          "start": 7.323,
-          "end": 7.394
-        },
-        {
-          "text": "caído",
-          "start": 7.406,
-          "end": 7.712
+          "text": "todo",
+          "start": 2.288,
+          "end": 2.562
         },
         {
           "text": "o",
-          "start": 7.724,
-          "end": 7.736
+          "start": 2.575,
+          "end": 2.6
         },
         {
-          "text": "valor",
-          "start": 7.748,
-          "end": 8.078
+          "text": "país",
+          "start": 2.612,
+          "end": 3.075
         },
         {
-          "text": "precioso",
-          "start": 8.09,
-          "end": 8.703
-        },
-        {
-          "text": "que",
-          "start": 8.715,
-          "end": 8.821
-        },
-        {
-          "text": "ele",
-          "start": 8.833,
-          "end": 8.962
+          "text": "você",
+          "start": 3.3,
+          "end": 3.575
         },
         {
           "text": "tem",
-          "start": 8.974,
-          "end": 9.104
+          "start": 3.587,
+          "end": 3.725
         },
         {
-          "text": "diante",
-          "start": 9.116,
-          "end": 9.517
+          "text": "direito",
+          "start": 3.737,
+          "end": 4.1
         },
         {
-          "text": "da",
-          "start": 9.528,
-          "end": 9.646
+          "text": "a",
+          "start": 4.112,
+          "end": 4.138
         },
         {
-          "text": "vida",
-          "start": 9.658,
-          "end": 9.953
+          "text": "atendimento",
+          "start": 4.15,
+          "end": 4.7
+        },
+        {
+          "text": "médico",
+          "start": 4.713,
+          "end": 5.163
+        },
+        {
+          "text": "e",
+          "start": 5.175,
+          "end": 5.2
+        },
+        {
+          "text": "psicológico",
+          "start": 5.213,
+          "end": 5.888
+        },
+        {
+          "text": "gratuito",
+          "start": 5.9,
+          "end": 6.438
+        },
+        {
+          "text": "nos",
+          "start": 6.45,
+          "end": 6.638
+        },
+        {
+          "text": "CAPS",
+          "start": 6.65,
+          "end": 7.1
+        },
+        {
+          "text": "Centros",
+          "start": 7.388,
+          "end": 7.85
+        },
+        {
+          "text": "de",
+          "start": 7.862,
+          "end": 7.938
+        },
+        {
+          "text": "Atenção",
+          "start": 7.95,
+          "end": 8.45
+        },
+        {
+          "text": "Psicossocial",
+          "start": 8.463,
+          "end": 9.287
+        },
+        {
+          "text": "e",
+          "start": 9.65,
+          "end": 9.725
+        },
+        {
+          "text": "nas",
+          "start": 9.738,
+          "end": 9.863
+        },
+        {
+          "text": "Unidades",
+          "start": 9.875,
+          "end": 10.45
+        },
+        {
+          "text": "Básicas",
+          "start": 10.463,
+          "end": 10.95
+        },
+        {
+          "text": "de",
+          "start": 10.963,
+          "end": 11.062
+        },
+        {
+          "text": "Saúde",
+          "start": 11.075,
+          "end": 11.525
+        },
+        {
+          "text": "perto",
+          "start": 11.537,
+          "end": 11.887
+        },
+        {
+          "text": "de",
+          "start": 11.9,
+          "end": 11.988
+        },
+        {
+          "text": "você",
+          "start": 12.0,
+          "end": 12.412
         }
       ]
     },
     "s4": {
-      "text": "Amar não é fechar os olhos para os erros, mas nunca é humilhar quem errou. Ensine com paciência, respeite o tempo de cada um e estenda a mão para caminhar junto. Quem ajuda a levantar o próximo, cresce junto com ele.",
+      "text": "Se você está em Fernandópolis, procure o CAPS II municipal, a sua UBS de bairro ou a UPA vinte e quatro horas. Em momentos de crise urgente, ligue cento e noventa e dois para o SAMU ou cento e noventa e três.",
       "words": [
         {
-          "text": "Amar",
-          "start": 0.097,
-          "end": 0.486
+          "text": "Se",
+          "start": 0.1,
+          "end": 0.3
         },
         {
-          "text": "não",
-          "start": 0.498,
-          "end": 0.64
+          "text": "você",
+          "start": 0.312,
+          "end": 0.588
         },
         {
-          "text": "é",
-          "start": 0.651,
-          "end": 0.71
+          "text": "está",
+          "start": 0.6,
+          "end": 0.85
         },
         {
-          "text": "fechar",
-          "start": 0.722,
-          "end": 1.1
+          "text": "em",
+          "start": 0.863,
+          "end": 0.925
         },
         {
-          "text": "os",
-          "start": 1.111,
-          "end": 1.158
+          "text": "Fernandópolis",
+          "start": 0.938,
+          "end": 1.788
         },
         {
-          "text": "olhos",
-          "start": 1.17,
-          "end": 1.536
-        },
-        {
-          "text": "para",
-          "start": 1.548,
-          "end": 1.689
-        },
-        {
-          "text": "os",
-          "start": 1.701,
-          "end": 1.736
-        },
-        {
-          "text": "erros",
-          "start": 1.748,
-          "end": 2.22
-        },
-        {
-          "text": "mas",
-          "start": 2.409,
-          "end": 2.656
-        },
-        {
-          "text": "nunca",
-          "start": 2.668,
-          "end": 2.974
-        },
-        {
-          "text": "é",
-          "start": 2.986,
-          "end": 3.033
-        },
-        {
-          "text": "humilhar",
-          "start": 3.045,
-          "end": 3.423
-        },
-        {
-          "text": "quem",
-          "start": 3.434,
-          "end": 3.635
-        },
-        {
-          "text": "errou",
-          "start": 3.647,
-          "end": 3.953
-        },
-        {
-          "text": "Ensine",
-          "start": 4.764,
-          "end": 5.283
-        },
-        {
-          "text": "com",
-          "start": 5.295,
-          "end": 5.448
-        },
-        {
-          "text": "paciência",
-          "start": 5.46,
-          "end": 6.085
-        },
-        {
-          "text": "respeite",
-          "start": 6.297,
-          "end": 6.792
+          "text": "procure",
+          "start": 2.05,
+          "end": 2.475
         },
         {
           "text": "o",
-          "start": 6.804,
-          "end": 6.851
+          "start": 2.487,
+          "end": 2.537
         },
         {
-          "text": "tempo",
-          "start": 6.863,
-          "end": 7.182
+          "text": "CAPS",
+          "start": 2.55,
+          "end": 2.862
+        },
+        {
+          "text": "II",
+          "start": 2.875,
+          "end": 3.275
+        },
+        {
+          "text": "municipal",
+          "start": 3.288,
+          "end": 3.925
+        },
+        {
+          "text": "a",
+          "start": 4.213,
+          "end": 4.263
+        },
+        {
+          "text": "sua",
+          "start": 4.275,
+          "end": 4.475
+        },
+        {
+          "text": "UBS",
+          "start": 4.487,
+          "end": 4.95
         },
         {
           "text": "de",
-          "start": 7.193,
-          "end": 7.288
+          "start": 4.963,
+          "end": 5.05
         },
         {
-          "text": "cada",
-          "start": 7.3,
-          "end": 7.559
+          "text": "bairro",
+          "start": 5.062,
+          "end": 5.45
         },
         {
-          "text": "um",
-          "start": 7.571,
-          "end": 7.783
+          "text": "ou",
+          "start": 5.463,
+          "end": 5.638
+        },
+        {
+          "text": "a",
+          "start": 5.65,
+          "end": 5.75
+        },
+        {
+          "text": "UPA",
+          "start": 5.763,
+          "end": 6.013
+        },
+        {
+          "text": "vinte",
+          "start": 6.025,
+          "end": 6.288
         },
         {
           "text": "e",
-          "start": 7.795,
-          "end": 7.818
+          "start": 6.3,
+          "end": 6.312
         },
         {
-          "text": "estenda",
-          "start": 7.83,
-          "end": 8.137
+          "text": "quatro",
+          "start": 6.325,
+          "end": 6.625
         },
         {
-          "text": "a",
-          "start": 8.149,
-          "end": 8.172
+          "text": "horas",
+          "start": 6.638,
+          "end": 7.062
         },
         {
-          "text": "mão",
-          "start": 8.184,
-          "end": 8.396
+          "text": "Em",
+          "start": 7.925,
+          "end": 8.025
+        },
+        {
+          "text": "momentos",
+          "start": 8.037,
+          "end": 8.6
+        },
+        {
+          "text": "de",
+          "start": 8.613,
+          "end": 8.725
+        },
+        {
+          "text": "crise",
+          "start": 8.738,
+          "end": 9.1
+        },
+        {
+          "text": "urgente",
+          "start": 9.113,
+          "end": 9.613
+        },
+        {
+          "text": "ligue",
+          "start": 9.875,
+          "end": 10.15
+        },
+        {
+          "text": "cento",
+          "start": 10.162,
+          "end": 10.512
+        },
+        {
+          "text": "e",
+          "start": 10.525,
+          "end": 10.537
+        },
+        {
+          "text": "noventa",
+          "start": 10.55,
+          "end": 10.85
+        },
+        {
+          "text": "e",
+          "start": 10.863,
+          "end": 10.913
+        },
+        {
+          "text": "dois",
+          "start": 10.925,
+          "end": 11.163
         },
         {
           "text": "para",
-          "start": 8.408,
-          "end": 8.585
-        },
-        {
-          "text": "caminhar",
-          "start": 8.597,
-          "end": 9.009
-        },
-        {
-          "text": "junto",
-          "start": 9.021,
-          "end": 9.399
-        },
-        {
-          "text": "Quem",
-          "start": 10.212,
-          "end": 10.436
-        },
-        {
-          "text": "ajuda",
-          "start": 10.448,
-          "end": 10.802
-        },
-        {
-          "text": "a",
-          "start": 10.814,
-          "end": 10.825
-        },
-        {
-          "text": "levantar",
-          "start": 10.837,
-          "end": 11.285
+          "start": 11.175,
+          "end": 11.312
         },
         {
           "text": "o",
-          "start": 11.297,
-          "end": 11.356
+          "start": 11.325,
+          "end": 11.35
         },
         {
-          "text": "próximo",
-          "start": 11.368,
-          "end": 11.828
+          "text": "SAMU",
+          "start": 11.363,
+          "end": 11.675
         },
         {
-          "text": "cresce",
-          "start": 12.064,
-          "end": 12.417
+          "text": "ou",
+          "start": 11.688,
+          "end": 11.775
         },
         {
-          "text": "junto",
-          "start": 12.429,
-          "end": 12.748
+          "text": "cento",
+          "start": 11.787,
+          "end": 12.15
         },
         {
-          "text": "com",
-          "start": 12.759,
-          "end": 12.948
+          "text": "e",
+          "start": 12.162,
+          "end": 12.188
         },
         {
-          "text": "ele",
-          "start": 12.96,
-          "end": 13.208
+          "text": "noventa",
+          "start": 12.2,
+          "end": 12.512
+        },
+        {
+          "text": "e",
+          "start": 12.525,
+          "end": 12.588
+        },
+        {
+          "text": "três",
+          "start": 12.6,
+          "end": 13.012
         }
       ]
     },
     "s5": {
-      "text": "Viver com propósito é colocar o amor em ação todos os dias. Não derrube quem já caiu: seja o apoio que transforma. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha.",
+      "text": "A sua vida tem um valor imenso e há pessoas prontas para caminhar ao seu lado. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha.",
       "words": [
         {
-          "text": "Viver",
-          "start": 0.097,
-          "end": 0.486
+          "text": "A",
+          "start": 0.1,
+          "end": 0.2
         },
         {
-          "text": "com",
-          "start": 0.498,
-          "end": 0.64
+          "text": "sua",
+          "start": 0.212,
+          "end": 0.475
         },
         {
-          "text": "propósito",
-          "start": 0.651,
-          "end": 1.229
+          "text": "vida",
+          "start": 0.487,
+          "end": 0.8
         },
         {
-          "text": "é",
-          "start": 1.241,
-          "end": 1.288
+          "text": "tem",
+          "start": 0.812,
+          "end": 0.938
         },
         {
-          "text": "colocar",
-          "start": 1.3,
-          "end": 1.713
+          "text": "um",
+          "start": 0.95,
+          "end": 1.012
         },
         {
-          "text": "o",
-          "start": 1.725,
-          "end": 1.795
+          "text": "valor",
+          "start": 1.025,
+          "end": 1.312
         },
         {
-          "text": "amor",
-          "start": 1.807,
-          "end": 2.09
-        },
-        {
-          "text": "em",
-          "start": 2.102,
-          "end": 2.184
-        },
-        {
-          "text": "ação",
-          "start": 2.196,
-          "end": 2.55
-        },
-        {
-          "text": "todos",
-          "start": 2.562,
-          "end": 2.892
-        },
-        {
-          "text": "os",
-          "start": 2.904,
-          "end": 3.069
-        },
-        {
-          "text": "dias",
-          "start": 3.081,
-          "end": 3.505
-        },
-        {
-          "text": "Não",
-          "start": 4.316,
-          "end": 4.564
-        },
-        {
-          "text": "derrube",
-          "start": 4.575,
-          "end": 4.988
-        },
-        {
-          "text": "quem",
-          "start": 5.0,
-          "end": 5.141
-        },
-        {
-          "text": "já",
-          "start": 5.153,
-          "end": 5.295
-        },
-        {
-          "text": "caiu",
-          "start": 5.307,
-          "end": 5.625
-        },
-        {
-          "text": "seja",
-          "start": 5.943,
-          "end": 6.191
-        },
-        {
-          "text": "o",
-          "start": 6.203,
-          "end": 6.238
-        },
-        {
-          "text": "apoio",
-          "start": 6.25,
-          "end": 6.639
-        },
-        {
-          "text": "que",
-          "start": 6.651,
-          "end": 6.757
-        },
-        {
-          "text": "transforma",
-          "start": 6.769,
-          "end": 7.382
-        },
-        {
-          "text": "Projeto",
-          "start": 8.196,
-          "end": 8.726
-        },
-        {
-          "text": "Social",
-          "start": 8.738,
-          "end": 9.186
-        },
-        {
-          "text": "Amor",
-          "start": 9.198,
-          "end": 9.564
-        },
-        {
-          "text": "Que",
-          "start": 9.575,
-          "end": 9.682
-        },
-        {
-          "text": "Compartilha",
-          "start": 9.693,
-          "end": 10.377
-        },
-        {
-          "text": "Acesse",
-          "start": 11.191,
-          "end": 11.722
-        },
-        {
-          "text": "www",
-          "start": 11.733,
-          "end": 12.535
-        },
-        {
-          "text": "ponto",
-          "start": 12.547,
-          "end": 12.807
-        },
-        {
-          "text": "amorquecompartilha",
-          "start": 12.818,
-          "end": 13.691
-        },
-        {
-          "text": "ponto",
-          "start": 13.703,
-          "end": 14.021
-        },
-        {
-          "text": "com",
-          "start": 14.033,
-          "end": 14.21
-        },
-        {
-          "text": "ponto",
-          "start": 14.222,
-          "end": 14.481
-        },
-        {
-          "text": "br",
-          "start": 14.493,
-          "end": 14.917
+          "text": "imenso",
+          "start": 1.325,
+          "end": 1.775
         },
         {
           "text": "e",
-          "start": 14.929,
-          "end": 14.976
+          "start": 1.788,
+          "end": 1.812
+        },
+        {
+          "text": "há",
+          "start": 1.825,
+          "end": 1.875
+        },
+        {
+          "text": "pessoas",
+          "start": 1.887,
+          "end": 2.337
+        },
+        {
+          "text": "prontas",
+          "start": 2.35,
+          "end": 2.788
+        },
+        {
+          "text": "para",
+          "start": 2.8,
+          "end": 2.987
+        },
+        {
+          "text": "caminhar",
+          "start": 3.0,
+          "end": 3.4
+        },
+        {
+          "text": "ao",
+          "start": 3.413,
+          "end": 3.488
+        },
+        {
+          "text": "seu",
+          "start": 3.5,
+          "end": 3.688
+        },
+        {
+          "text": "lado",
+          "start": 3.7,
+          "end": 4.05
+        },
+        {
+          "text": "Projeto",
+          "start": 4.912,
+          "end": 5.475
+        },
+        {
+          "text": "Social",
+          "start": 5.487,
+          "end": 5.962
+        },
+        {
+          "text": "Amor",
+          "start": 5.975,
+          "end": 6.362
+        },
+        {
+          "text": "Que",
+          "start": 6.375,
+          "end": 6.487
+        },
+        {
+          "text": "Compartilha",
+          "start": 6.5,
+          "end": 7.225
+        },
+        {
+          "text": "Acesse",
+          "start": 8.088,
+          "end": 8.65
+        },
+        {
+          "text": "www",
+          "start": 8.662,
+          "end": 9.512
+        },
+        {
+          "text": "ponto",
+          "start": 9.525,
+          "end": 9.8
+        },
+        {
+          "text": "amorquecompartilha",
+          "start": 9.812,
+          "end": 10.738
+        },
+        {
+          "text": "ponto",
+          "start": 10.75,
+          "end": 11.088
+        },
+        {
+          "text": "com",
+          "start": 11.1,
+          "end": 11.287
+        },
+        {
+          "text": "ponto",
+          "start": 11.3,
+          "end": 11.575
+        },
+        {
+          "text": "br",
+          "start": 11.588,
+          "end": 12.037
+        },
+        {
+          "text": "e",
+          "start": 12.05,
+          "end": 12.1
         },
         {
           "text": "siga",
-          "start": 14.988,
-          "end": 15.283
+          "start": 12.113,
+          "end": 12.425
         },
         {
           "text": "no",
-          "start": 15.295,
-          "end": 15.366
+          "start": 12.438,
+          "end": 12.512
         },
         {
           "text": "Instagram",
-          "start": 15.377,
-          "end": 15.755
+          "start": 12.525,
+          "end": 12.925
         },
         {
           "text": "arroba",
-          "start": 15.767,
-          "end": 16.085
+          "start": 12.938,
+          "end": 13.275
         },
         {
           "text": "amor",
-          "start": 16.097,
-          "end": 16.356
+          "start": 13.287,
+          "end": 13.562
         },
         {
           "text": "ponto",
-          "start": 16.368,
-          "end": 16.71
+          "start": 13.575,
+          "end": 13.938
         },
         {
           "text": "que",
-          "start": 16.722,
-          "end": 16.84
+          "start": 13.95,
+          "end": 14.075
         },
         {
           "text": "ponto",
-          "start": 16.851,
-          "end": 17.158
+          "start": 14.088,
+          "end": 14.412
         },
         {
           "text": "compartilha",
-          "start": 17.17,
-          "end": 17.83
+          "start": 14.425,
+          "end": 15.125
         }
       ]
     }

@@ -25,6 +25,7 @@ fs.mkdirSync(distPublic, { recursive: true });
 // 2. Copiar vídeos de out/ para dist/videos/
 const outDir = path.join(projectRoot, 'out');
 const videos = [
+  'procurarajuda.mp4',
   'amarenaojulgar.mp4',
   'amor-que-compartilha.mp4',
   'licao-de-vida.mp4'
@@ -111,13 +112,14 @@ for (let i = 0; i < sceneKeys.length; i++) {
 }
 fs.writeFileSync(path.join(distDir, 'subtitles-licao.vtt'), vttLicao, 'utf8');
 fs.writeFileSync(path.join(distDir, 'subtitles-amarenaojulgar.vtt'), vttLicao, 'utf8');
+fs.writeFileSync(path.join(distDir, 'subtitles-procurarajuda.vtt'), vttLicao, 'utf8');
 
 // 6. Gerar version.json
 const versionInfo = {
-  version: '1.20.311',
+  version: '1.20.312',
   build: new Date().toISOString(),
   name: 'videos-animados-aqc',
-  title: 'Amor Que Compartilha — Vídeos Animados 3D (Amar e Não Julgar)',
+  title: 'Amor Que Compartilha — Vídeos Animados 3D (Quem Procurar / Procurar Ajuda)',
   security: {
     status: 'HARDENED',
     skill: 'skillsegurancamaxima',
@@ -455,11 +457,14 @@ function generateIndexHtml(v) {
   <main class="container">
 
     <div class="hero-tabs">
-      <button class="tab-btn active" id="tab-amarenaojulgar" onclick="switchVideo('amarenaojulgar')">
-        ❤️ Amar e Não Julgar (Lição de Vida 3D)
+      <button class="tab-btn active" id="tab-procurarajuda" onclick="switchVideo('procurarajuda')">
+        🆘 Quem Procurar (Ligue 188 • CAPS • Fernandópolis)
+      </button>
+      <button class="tab-btn" id="tab-amarenaojulgar" onclick="switchVideo('amarenaojulgar')">
+        ❤️ Amar e Não Julgar
       </button>
       <button class="tab-btn" id="tab-licao" onclick="switchVideo('licao')">
-        🎬 Viver em Paz (Lição de Vida)
+        🎬 Viver em Paz
       </button>
       <button class="tab-btn" id="tab-neuro" onclick="switchVideo('neuro')">
         🧠 Conscientização: TDAH, TOD e TEA
@@ -472,8 +477,8 @@ function generateIndexHtml(v) {
       <section class="video-card" aria-label="Reprodutor de Vídeo">
         <div class="video-wrapper">
           <video id="mainVideo" controls preload="metadata" playsinline poster="./gallery/contact_sheet_final.png">
-            <source id="videoSource" src="./videos/amarenaojulgar.mp4" type="video/mp4">
-            <track id="videoTrack" kind="subtitles" src="./subtitles-amarenaojulgar.vtt" srclang="pt-BR" label="Português" default>
+            <source id="videoSource" src="./videos/procurarajuda.mp4" type="video/mp4">
+            <track id="videoTrack" kind="subtitles" src="./subtitles-procurarajuda.vtt" srclang="pt-BR" label="Português" default>
             Seu navegador não suporta reprodução direta de vídeo HTML5.
           </video>
         </div>
@@ -481,7 +486,7 @@ function generateIndexHtml(v) {
           <div class="video-meta" id="videoResolution">
             📐 1080×1920 (9:16) • 30 fps • H.264
           </div>
-          <a id="btnDownload" href="./videos/amarenaojulgar.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
+          <a id="btnDownload" href="./videos/procurarajuda.mp4" download class="btn btn-outline" style="font-size: 0.75rem; padding: 0.35rem 0.65rem;">
             📥 Baixar MP4
           </a>
         </div>
@@ -549,6 +554,14 @@ function generateIndexHtml(v) {
   </footer>
 
   <script>
+    const scenesProcurarajuda = [
+      { time: 0.00, title: "1. Você Não Está Sozinho", desc: "Ansiedade e depressão. Sentir dor não é fraqueza e pedir ajuda é o maior ato de coragem." },
+      { time: 11.45, title: "2. Ligue 188 (CVV)", desc: "Governo Federal. Apoio emocional gratuito, sigiloso e disponível 24 horas por dia." },
+      { time: 26.61, title: "3. CAPS & UBS (SUS SP)", desc: "Governo Estadual e SUS. Atendimento médico e psicológico gratuito nos CAPS e UBSs." },
+      { time: 39.42, title: "4. Fernandópolis SP", desc: "Procure o CAPS II municipal, sua UBS ou UPA 24h. Em crises urgentes, ligue 192 (SAMU) ou 193." },
+      { time: 52.80, title: "5. Sua Vida Tem Valor", desc: "Sua vida vale muito e você não está só. Projeto Social Amor Que Compartilha." }
+    ];
+
     const scenesAmarenaojulgar = [
       { time: 0.00, title: "1. Amar Sem Julgar", desc: "Acolhimento e empatia. A verdadeira sabedoria começa quando trocamos a crítica pela compreensão." },
       { time: 13.34, title: "2. O Poder do Abraço", desc: "Acolher sem julgar. Um abraço sincero que acolha a alma sem fazer perguntas. Gestos que restauram." },
@@ -576,7 +589,7 @@ function generateIndexHtml(v) {
       { time: 79.00, title: "8. Amar e Compreender", desc: "Pessoas neurodivergentes não precisam ser consertadas, precisam de amor." }
     ];
 
-    let currentMode = 'amarenaojulgar';
+    let currentMode = 'procurarajuda';
     const video = document.getElementById('mainVideo');
     const videoSource = document.getElementById('videoSource');
     const videoTrack = document.getElementById('videoTrack');
@@ -612,11 +625,17 @@ function generateIndexHtml(v) {
 
     function switchVideo(mode) {
       currentMode = mode;
+      document.getElementById('tab-procurarajuda').classList.toggle('active', mode === 'procurarajuda');
       document.getElementById('tab-amarenaojulgar').classList.toggle('active', mode === 'amarenaojulgar');
       document.getElementById('tab-licao').classList.toggle('active', mode === 'licao');
       document.getElementById('tab-neuro').classList.toggle('active', mode === 'neuro');
 
-      if (mode === 'amarenaojulgar') {
+      if (mode === 'procurarajuda') {
+        videoSource.src = './videos/procurarajuda.mp4';
+        videoTrack.src = './subtitles-procurarajuda.vtt';
+        btnDownload.href = './videos/procurarajuda.mp4';
+        renderScenes(scenesProcurarajuda);
+      } else if (mode === 'amarenaojulgar') {
         videoSource.src = './videos/amarenaojulgar.mp4';
         videoTrack.src = './subtitles-amarenaojulgar.vtt';
         btnDownload.href = './videos/amarenaojulgar.mp4';
@@ -638,7 +657,8 @@ function generateIndexHtml(v) {
 
     // Sincronizar cena ativa durante o playback
     video.addEventListener('timeupdate', () => {
-      let list = scenesAmarenaojulgar;
+      let list = scenesProcurarajuda;
+      if (currentMode === 'amarenaojulgar') list = scenesAmarenaojulgar;
       if (currentMode === 'licao') list = scenesLicao;
       if (currentMode === 'neuro') list = scenesNeuro;
 
@@ -654,7 +674,7 @@ function generateIndexHtml(v) {
     });
 
     // Inicializar lista padrão
-    renderScenes(scenesAmarenaojulgar);
+    renderScenes(scenesProcurarajuda);
 
     // Auto-atualizador sem travar
     setInterval(() => {

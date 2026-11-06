@@ -98,13 +98,13 @@ const P = {
 };
 
 export const scenes: ScenePlan[] = [
-  // CENA 1: AMAR SEM JULGAR (Acolhimento / Compreensão / Não Apontar o Dedo)
+  // CENA 1: VOCÊ NÃO ESTÁ SOZINHO (Ansiedade / Depressão / Coragem de Pedir Ajuda)
   {
-    id: "scene-01-amar-sem-julgar",
+    id: "scene-01-voce-nao-esta-sozinho",
     startFrame: sc(0).from,
     durationInFrames: sc(0).durationInFrames,
     voKey: "s1",
-    narration: "É muito fácil apontar o dedo e julgar quem tropeça pelo caminho. Mas quem julga nunca sabe a dor silenciosa que o outro carrega no peito. A verdadeira sabedoria da vida começa quando trocamos a crítica pela compreensão.",
+    narration: "A ansiedade e a depressão podem fazer parecer que você está sozinho em uma noite escura. Mas saiba: sentir dor não é fraqueza, e pedir ajuda é o maior ato de coragem que existe.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -121,21 +121,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "light.warmth", startFrame: 0, endFrame: 60, from: 0.6, to: 1.0, easing: "out", unit: "0-1" },
     ],
     badges: [
-      { text: "1. AMAR SEM JULGAR", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(0) - 10) },
-      { text: "COMPREENSÃO & EMPATIA", variant: "positive", appearAt: 170, disappearAt: end(0) - 5 },
+      { text: "1. VOCÊ NÃO ESTÁ SOZINHO", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(0) - 10) },
+      { text: "PEDIR AJUDA É CORAGEM", variant: "positive", appearAt: 170, disappearAt: end(0) - 5 },
     ],
-    highlights: ["JULGAR", "TROPEÇA", "DOR", "SILENCIOSA", "SABEDORIA", "CRÍTICA", "COMPREENSÃO"],
-    captions: [{ text: "Quem julga nunca sabe a dor silenciosa que o outro carrega.", from: voLocal("s1"), to: end(0) }],
+    highlights: ["ANSIEDADE", "DEPRESSÃO", "SOZINHO", "NOITE", "DOR", "FRAQUEZA", "AJUDA", "CORAGEM"],
+    captions: [{ text: "Sentir dor não é fraqueza. Pedir ajuda é um ato de coragem.", from: voLocal("s1"), to: end(0) }],
     audioCues: [narration("s1"), sfx("whoosh-soft", 0, 0.25), sfx("glow", 25, 0.35)],
   },
 
-  // CENA 2: O PODER DO ABRAÇO (Acolhimento / Conforto / Sem Perguntas)
+  // CENA 2: GOVERNO FEDERAL — LIGUE 188 (CVV / Apoio Emocional 24h Gratuito)
   {
-    id: "scene-02-o-poder-do-abraco",
+    id: "scene-02-cvv-ligue-188",
     startFrame: sc(1).from,
     durationInFrames: sc(1).durationInFrames,
     voKey: "s2",
-    narration: "Muitas vezes, quem está sofrendo não precisa de sermões ou cobranças. Só precisa de um abraço sincero que acolha a alma sem fazer perguntas. Um gesto de carinho tem a força de restaurar pedaços que palavras duras quebraram.",
+    narration: "Em qualquer momento de angústia ou pensamentos difíceis, ligue 188. O CVV, Centro de Valorização da Vida, oferece apoio emocional gratuito, sigiloso e disponível vinte e quatro horas por dia, todos os dias.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -151,21 +151,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "leaves.drift", startFrame: 0, endFrame: end(1), from: 0, to: 3.5, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "2. O PODER DO ABRAÇO", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(1) - 10) },
-      { text: "ACOLHER SEM JULGAR", variant: "positive", appearAt: 170, disappearAt: end(1) - 5 },
+      { text: "2. LIGUE 188 • CVV", variant: "warning", appearAt: 20, disappearAt: Math.min(160, end(1) - 10) },
+      { text: "24 HORAS & GRATUITO", variant: "positive", appearAt: 170, disappearAt: end(1) - 5 },
     ],
-    highlights: ["SOFRENDO", "ABRAÇO", "SINCERO", "ACOLHA", "ALMA", "CARINHO", "RESTAURAR"],
-    captions: [{ text: "Muitas vezes, quem sofre só precisa de um abraço sincero.", from: voLocal("s2"), to: end(1) }],
+    highlights: ["ANGÚSTIA", "DIFÍCEIS", "188", "CVV", "APOIO", "EMOCIONAL", "GRATUITO", "SIGILOSO", "HORAS"],
+    captions: [{ text: "Ligue 188. Apoio emocional gratuito, sigiloso e 24 horas por dia.", from: voLocal("s2"), to: end(1) }],
     audioCues: [narration("s2"), sfx("whoosh-soft", 0, 0.25), sfx("ding", 20, 0.32)],
   },
 
-  // CENA 3: ERGUER QUEM CAIU (Palavras de Consolo / Dignidade / Não Derrubar)
+  // CENA 3: GOVERNO ESTADUAL & SUS — CAPS E UBS (Atendimento Médico e Psicológico)
   {
-    id: "scene-03-erguer-quem-caiu",
+    id: "scene-03-rede-sus-caps-ubs",
     startFrame: sc(2).from,
     durationInFrames: sc(2).durationInFrames,
     voKey: "s3",
-    narration: "Suas palavras têm o poder de derrubar ou de erguer uma vida. Seja a voz que acalma a tempestade, que devolve a dignidade e lembra ao caído o valor precioso que ele tem diante da vida.",
+    narration: "Pelo SUS, no Estado de São Paulo e em todo o país, você tem direito a atendimento médico e psicológico gratuito nos CAPS, Centros de Atenção Psicossocial, e nas Unidades Básicas de Saúde perto de você.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -181,21 +181,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "stars.twinkle", startFrame: 0, endFrame: end(2), from: 0, to: 2.5, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "3. ERGUER QUEM CAIU", variant: "info", appearAt: 20, disappearAt: Math.min(160, end(2) - 10) },
-      { text: "PALAVRAS DE CONSOLO", variant: "positive", appearAt: 170, disappearAt: end(2) - 5 },
+      { text: "3. CAPS & UBS • SUS", variant: "info", appearAt: 20, disappearAt: Math.min(160, end(2) - 10) },
+      { text: "CUIDADO MÉDICO & PSICOLÓGICO", variant: "positive", appearAt: 170, disappearAt: end(2) - 5 },
     ],
-    highlights: ["PALAVRAS", "DERRUBAR", "ERGUER", "TEMPESTADE", "DIGNIDADE", "VALOR", "PRECIOSO"],
-    captions: [{ text: "Suas palavras têm o poder de derrubar ou de erguer uma vida.", from: voLocal("s3"), to: end(2) }],
+    highlights: ["SUS", "SÃO PAULO", "MÉDICO", "PSICOLÓGICO", "GRATUITO", "CAPS", "UBS", "SAÚDE"],
+    captions: [{ text: "Atendimento médico e psicológico gratuito nos CAPS e UBSs perto de você.", from: voLocal("s3"), to: end(2) }],
     audioCues: [narration("s3"), sfx("whoosh-soft", 0, 0.25), sfx("shimmer", 20, 0.35)],
   },
 
-  // CENA 4: ENSINAR COM PACIÊNCIA (Caminhar Junto / Ensinamentos / Crescer Junto)
+  // CENA 4: CIDADE DE FERNANDÓPOLIS SP — CAPS II, UPA 24H E SAMU 192
   {
-    id: "scene-04-ensinar-com-paciencia",
+    id: "scene-04-fernandopolis-caps-upa-samu",
     startFrame: sc(3).from,
     durationInFrames: sc(3).durationInFrames,
     voKey: "s4",
-    narration: "Amar não é fechar os olhos para os erros, mas nunca é humilhar quem errou. Ensine com paciência, respeite o tempo de cada um e estenda a mão para caminhar junto. Quem ajuda a levantar o próximo, cresce junto com ele.",
+    narration: "Se você está em Fernandópolis, procure o CAPS II municipal, a sua UBS de bairro ou a UPA vinte e quatro horas. Em momentos de crise urgente, ligue cento e noventa e dois para o SAMU ou cento e noventa e três.",
     camera: {
       projection: "perspective",
       movement: "dolly-in",
@@ -211,21 +211,21 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "petals.drift", startFrame: 0, endFrame: end(3), from: 0, to: 3.0, easing: "linear", unit: "u3d" },
     ],
     badges: [
-      { text: "4. ENSINAR COM PACIÊNCIA", variant: "positive", appearAt: 20, disappearAt: Math.min(160, end(3) - 10) },
-      { text: "CAMINHAR JUNTO", variant: "positive", appearAt: 170, disappearAt: end(3) - 5 },
+      { text: "4. FERNANDÓPOLIS: CAPS II & UPA", variant: "positive", appearAt: 20, disappearAt: Math.min(160, end(3) - 10) },
+      { text: "SAMU 192 • BOMBEIROS 193", variant: "positive", appearAt: 170, disappearAt: end(3) - 5 },
     ],
-    highlights: ["AMAR", "PACIÊNCIA", "ESTENDA", "MÃO", "CAMINHAR", "AJUDA", "LEVANTA", "CRESCE"],
-    captions: [{ text: "Quem ajuda a levantar o próximo, cresce junto com ele.", from: voLocal("s4"), to: end(3) }],
+    highlights: ["FERNANDÓPOLIS", "CAPS", "II", "UBS", "UPA", "HORAS", "CRISE", "192", "SAMU", "193"],
+    captions: [{ text: "Em Fernandópolis: CAPS II, sua UBS ou UPA 24h. Emergência: 192 SAMU.", from: voLocal("s4"), to: end(3) }],
     audioCues: [narration("s4"), sfx("whoosh-soft", 0, 0.25), sfx("glow", 20, 0.32)],
   },
 
-  // CENA 5: PROJETO SOCIAL AMOR QUE COMPARTILHA (Conclusão & Chamada Sagrada)
+  // CENA 5: PROJETO SOCIAL AMOR QUE COMPARTILHA — SUA VIDA TEM VALOR
   {
-    id: "scene-05-amor-que-compartilha",
+    id: "scene-05-sua-vida-tem-valor",
     startFrame: sc(4).from,
     durationInFrames: sc(4).durationInFrames,
     voKey: "s5",
-    narration: "Viver com propósito é colocar o amor em ação todos os dias. Não derrube quem já caiu: seja o apoio que transforma. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha.",
+    narration: "A sua vida tem um valor imenso e há pessoas prontas para caminhar ao seu lado. Projeto Social Amor Que Compartilha. Acesse www ponto amorquecompartilha ponto com ponto br e siga no Instagram arroba amor ponto que ponto compartilha.",
     camera: {
       projection: "perspective",
       movement: "dolly-out",
@@ -243,11 +243,11 @@ export const scenes: ScenePlan[] = [
       { type: "interpolate", target: "fade", startFrame: end(4) - 25, endFrame: end(4), from: 0, to: 1, easing: "in", unit: "0-1" },
     ],
     badges: [
-      { text: "AMAR E NÃO JULGAR", variant: "warning", size: "large", appearAt: 15, disappearAt: 130 },
-      { text: "AMOR EM AÇÃO", variant: "positive", size: "large", appearAt: 135, disappearAt: end(4) - 5 },
+      { text: "SUA VIDA VALE MUITO", variant: "warning", size: "large", appearAt: 15, disappearAt: 130 },
+      { text: "PROCURAR AJUDA SALVA", variant: "positive", size: "large", appearAt: 135, disappearAt: end(4) - 5 },
     ],
-    highlights: ["VIVER", "PROPÓSITO", "AMOR", "AÇÃO", "PROJETO", "SOCIAL", "COMPARTILHA", "TRANSFORMA"],
-    captions: [{ text: "Não derrube quem já caiu: seja o apoio que transforma vidas.", from: voLocal("s5"), to: end(4) }],
+    highlights: ["VIDA", "VALOR", "IMENSO", "CAMINHAR", "LADO", "PROJETO", "SOCIAL", "COMPARTILHA"],
+    captions: [{ text: "Sua vida tem um valor imenso. Não desista: há apoio para você.", from: voLocal("s5"), to: end(4) }],
     audioCues: [narration("s5"), sfx("final", 15, 0.38), sfx("whoosh", end(4) - 25, 0.25)],
   },
 ];
